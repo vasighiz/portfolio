@@ -6,19 +6,25 @@
   </head>
   <body>
     <script>
-      // Get the current path
-      const path = window.location.pathname;
-      
-      // Remove /portfolio/ from the path if it exists
-      const cleanPath = path.replace(/^\/portfolio\/?/, '');
-      
-      // If we're already on the correct path, don't redirect
-      if (path === '/portfolio/' + cleanPath) {
-        return;
-      }
-      
-      // Redirect to the main app with the correct path
-      window.location.href = '/portfolio/' + cleanPath;
+      (function() {
+        const path = window.location.pathname;
+        
+        // If we're already on the correct path, don't redirect
+        if (path.startsWith('/portfolio/')) {
+          return;
+        }
+        
+        // Get the path without /portfolio prefix
+        const cleanPath = path.replace(/^\/portfolio\/?/, '');
+        
+        // Handle root path
+        if (cleanPath === '' || cleanPath === '/') {
+          window.location.replace('/portfolio/');
+        } else {
+          // Handle other paths
+          window.location.replace('/portfolio/' + cleanPath);
+        }
+      })();
     </script>
   </body>
 </html> 
