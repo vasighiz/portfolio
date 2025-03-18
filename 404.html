@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Redirecting...</title>
+  </head>
+  <body>
+    <script>
+      // Get the current path
+      const path = window.location.pathname;
+      
+      // Remove /portfolio/ from the path if it exists
+      const cleanPath = path.replace(/^\/portfolio/, '');
+      
+      // Redirect to the main app with the correct path
+      window.location.href = '/portfolio/' + cleanPath;
+    </script>
+  </body>
+</html> 
