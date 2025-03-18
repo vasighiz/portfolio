@@ -39,28 +39,17 @@
   <body>
     <div class="container">
       <h2>Redirecting...</h2>
-      <p>If you are not redirected automatically, please <a href="/portfolio/">click here</a>.</p>
+      <p>If you are not redirected automatically, please <a href="https://vasighi.github.io/portfolio/">click here</a>.</p>
     </div>
     <script>
-      (function() {
-        const path = window.location.pathname;
-        
-        // If we're already on the correct path, don't redirect
-        if (path.startsWith('/portfolio/')) {
-          return;
-        }
-        
-        // Get the path without /portfolio prefix
-        const cleanPath = path.replace(/^\/portfolio\/?/, '');
-        
-        // Handle root path
-        if (cleanPath === '' || cleanPath === '/') {
-          window.location.replace('/portfolio/');
-        } else {
-          // Handle other paths
-          window.location.replace('/portfolio/' + cleanPath);
-        }
-      })();
+      // Get the current path
+      const path = window.location.pathname;
+      
+      // Remove /portfolio/ from the path if it exists
+      const cleanPath = path.replace(/^\/portfolio\/?/, '');
+      
+      // Redirect to the main app with the correct path
+      window.location.href = 'https://vasighi.github.io/portfolio/' + cleanPath;
     </script>
   </body>
 </html> 
