@@ -3,8 +3,44 @@
   <head>
     <meta charset="utf-8">
     <title>Redirecting...</title>
+    <style>
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #f3f4f6;
+      }
+      .container {
+        text-align: center;
+        padding: 2rem;
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      }
+      h2 {
+        color: #1f2937;
+        margin-bottom: 1rem;
+      }
+      p {
+        color: #6b7280;
+      }
+      a {
+        color: #3b82f6;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+    </style>
   </head>
   <body>
+    <div class="container">
+      <h2>Redirecting...</h2>
+      <p>If you are not redirected automatically, please <a href="/portfolio/">click here</a>.</p>
+    </div>
     <script>
       const path = window.location.pathname;
       const cleanPath = path.replace(/^\/portfolio\/?/, '');
