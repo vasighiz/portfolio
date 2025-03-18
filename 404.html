@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Redirecting...</title>
     <style>
       body {
@@ -46,10 +47,15 @@
       const path = window.location.pathname;
       
       // Remove /portfolio/ from the path if it exists
-      const cleanPath = path.replace(/^\/portfolio\/?/, '');
+      const cleanPath = path.replace(/^\/portfolio\//, '');
       
-      // Redirect to the main app with the correct path
-      window.location.href = 'https://vasighi.github.io/portfolio/' + cleanPath;
+      // If we're already at the root, don't redirect
+      if (cleanPath === '') {
+        window.location.replace('/portfolio/');
+      } else {
+        // Redirect to the main app with the correct path
+        window.location.replace('/portfolio/#/' + cleanPath);
+      }
     </script>
   </body>
 </html> 
