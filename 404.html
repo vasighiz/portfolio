@@ -6,25 +6,9 @@
   </head>
   <body>
     <script>
-      (function() {
-        const path = window.location.pathname;
-        
-        // If we're already on the correct path, don't redirect
-        if (path.startsWith('/portfolio/')) {
-          return;
-        }
-        
-        // Get the path without /portfolio prefix
-        const cleanPath = path.replace(/^\/portfolio\/?/, '');
-        
-        // Handle root path
-        if (cleanPath === '' || cleanPath === '/') {
-          window.location.replace('/portfolio/');
-        } else {
-          // Handle other paths
-          window.location.replace('/portfolio/' + cleanPath);
-        }
-      })();
+      const path = window.location.pathname;
+      const cleanPath = path.replace(/^\/portfolio\/?/, '');
+      window.location.replace('/portfolio/' + cleanPath);
     </script>
   </body>
 </html> 
