@@ -10,15 +10,15 @@
       const path = window.location.pathname;
       
       // Remove /portfolio/ from the path if it exists
-      const cleanPath = path.replace(/^\/portfolio/, '');
+      const cleanPath = path.replace(/^\/portfolio\/?/, '');
       
-      // If the path is just /portfolio or /portfolio/, redirect to root
-      if (cleanPath === '' || cleanPath === '/') {
-        window.location.href = '/portfolio/';
-      } else {
-        // Redirect to the main app with the correct path
-        window.location.href = '/portfolio/' + cleanPath;
+      // If we're already on the correct path, don't redirect
+      if (path === '/portfolio/' + cleanPath) {
+        return;
       }
+      
+      // Redirect to the main app with the correct path
+      window.location.href = '/portfolio/' + cleanPath;
     </script>
   </body>
 </html> 
