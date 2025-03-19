@@ -6,13 +6,13 @@ const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex flex-col items-center text-center">
           <motion.div 
-            className="flex flex-col items-center space-y-3"
+            className="flex flex-col items-center space-y-4"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
             <motion.div
-              className="relative w-40 h-40"
+              className="relative w-48 h-48"
               whileHover={{ scale: 1.05 }}
               transition={{ type: "spring", stiffness: 300 }}
             >
@@ -24,7 +24,7 @@ const Header = () => {
             </motion.div>
             <div>
               <motion.h1 
-                className="text-lg font-bold text-gray-900 mb-1"
+                className="text-2xl font-bold text-gray-900 mb-2"
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.2 }}
@@ -32,7 +32,7 @@ const Header = () => {
                 Akram Vasighi
               </motion.h1>
               <motion.p 
-                className="text-md text-gray-600 leading-relaxed"
+                className="text-lg text-primary font-medium leading-relaxed"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.3 }}
