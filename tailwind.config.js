@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+import profileImage from '/profile.jpg';
+
 export default {
   content: [
     "./index.html",

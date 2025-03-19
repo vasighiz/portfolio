@@ -4,16 +4,16 @@ const Contact = () => {
       <p className="text-lg">
         Get in touch with me at{' '}
         <a 
-          href="mailto:your.email@example.com"
+          href="mailto:vasighizaker@gmail.com"
           className="underline hover:text-gray-600"
         >
-          your.email@example.com
+          vasighizaker@gmail.com
         </a>
       </p>
       
       <div className="space-x-6">
         <a 
-          href="https://github.com/yourusername"
+          href="https://github.com/vasighiz"
           target="_blank"
           rel="noopener noreferrer"
           className="text-gray-600 hover:text-gray-900"
@@ -21,7 +21,7 @@ const Contact = () => {
           GitHub
         </a>
         <a 
-          href="https://linkedin.com/in/yourusername"
+          href="https://www.linkedin.com/in/vasighi/"
           target="_blank"
           rel="noopener noreferrer"
           className="text-gray-600 hover:text-gray-900"

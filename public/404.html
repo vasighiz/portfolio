@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting...</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f5f5f5;
+      }
+      .loading {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="loading">
+      <h2>Redirecting...</h2>
+      <p>Please wait while we redirect you to the correct page.</p>
+    </div>
+    <script>
+      // Get the current path
+      const path = window.location.pathname;
+      
+      // Remove /portfolio/ from the path if it exists
+      const cleanPath = path.replace(/^\/portfolio\//, '');
+      
+      // If we're already at the root, don't redirect
+      if (cleanPath === '') {
+        window.location.replace('/portfolio/#/');
+      } else {
+        // Redirect to the main app with the correct path
+        window.location.replace('/portfolio/#/' + cleanPath);
+      }
+    </script>
+  </body>
+</html> 
