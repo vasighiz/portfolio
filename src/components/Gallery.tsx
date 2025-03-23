@@ -89,32 +89,47 @@ const Gallery = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
+      transition={{ duration: 0.8, ease: "easeInOut" }}
       className="container mx-auto px-4 py-8"
     >
       <motion.h2 
         className="text-3xl font-bold text-gray-900 mb-8 text-center"
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
       >
         Gallery
       </motion.h2>
       
-      <div className="relative">
+      <div className="relative perspective-1000">
         <AnimatePresence mode="wait">
           <motion.div
             key={currentPage}
-            initial={{ opacity: 0, rotateY: -180 }}
+            initial={{ opacity: 0, rotateY: -90 }}
             animate={{ opacity: 1, rotateY: 0 }}
-            exit={{ opacity: 0, rotateY: 180 }}
-            transition={{ duration: 0.5 }}
+            exit={{ opacity: 0, rotateY: 90 }}
+            transition={{ 
+              duration: 0.8, 
+              ease: "easeInOut",
+              opacity: { duration: 0.4 }
+            }}
             className="grid grid-cols-1 md:grid-cols-2 gap-8"
           >
-            {getCurrentItems().map((item) => (
+            {getCurrentItems().map((item, index) => (
               <motion.div
                 key={item.id}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ 
+                  duration: 0.6, 
+                  ease: "easeOut",
+                  delay: index * 0.1 + 0.3
+                }}
                 className="bg-white rounded-lg shadow-lg overflow-hidden"
-                whileHover={{ scale: 1.02 }}
-                transition={{ duration: 0.2 }}
+                whileHover={{ 
+                  scale: 1.02,
+                  transition: { duration: 0.3, ease: "easeOut" }
+                }}
               >
                 <div className="aspect-w-16 aspect-h-9">
                   <img
@@ -128,7 +143,7 @@ const Gallery = () => {
                   <p className="text-gray-600 mb-4">{item.description}</p>
                   <button
                     onClick={() => setSelectedWork(item)}
-                    className="text-primary hover:text-primary-600 font-medium transition-colors"
+                    className="text-primary hover:text-primary-600 font-medium transition-colors duration-300"
                   >
                     View Details →
                   </button>
@@ -140,21 +155,27 @@ const Gallery = () => {
 
         {totalPages > 1 && (
           <div className="flex justify-center items-center mt-8 space-x-4">
-            <button
+            <motion.button
               onClick={prevPage}
-              className="p-2 rounded-full bg-primary/10 text-primary hover:bg-primary/20 transition-colors"
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.95 }}
+              transition={{ duration: 0.2 }}
+              className="p-2 rounded-full bg-primary/10 text-primary hover:bg-primary/20 transition-colors duration-300"
             >
               <FaArrowLeft />
-            </button>
+            </motion.button>
             <span className="text-gray-600">
               Page {currentPage + 1} of {totalPages}
             </span>
-            <button
+            <motion.button
               onClick={nextPage}
-              className="p-2 rounded-full bg-primary/10 text-primary hover:bg-primary/20 transition-colors"
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.95 }}
+              transition={{ duration: 0.2 }}
+              className="p-2 rounded-full bg-primary/10 text-primary hover:bg-primary/20 transition-colors duration-300"
             >
               <FaArrowRight />
-            </button>
+            </motion.button>
           </div>
         )}
       </div>
@@ -166,23 +187,30 @@ const Gallery = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
+            transition={{ duration: 0.4 }}
             className="fixed inset-0 bg-black/50 flex items-center justify-center p-4 z-50"
             onClick={() => setSelectedWork(null)}
           >
             <motion.div
-              initial={{ scale: 0.9, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
-              exit={{ scale: 0.9, opacity: 0 }}
+              initial={{ scale: 0.9, opacity: 0, y: 20 }}
+              animate={{ scale: 1, opacity: 1, y: 0 }}
+              exit={{ scale: 0.9, opacity: 0, y: 20 }}
+              transition={{ 
+                duration: 0.5,
+                ease: "easeOut"
+              }}
               className="bg-white rounded-lg shadow-xl max-w-2xl w-full max-h-[90vh] overflow-y-auto"
               onClick={(e) => e.stopPropagation()}
             >
               <div className="relative">
-                <button
+                <motion.button
                   onClick={() => setSelectedWork(null)}
-                  className="absolute top-4 right-4 text-gray-500 hover:text-gray-700"
+                  className="absolute top-4 right-4 text-gray-500 hover:text-gray-700 transition-colors duration-300"
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.95 }}
                 >
                   <FaTimes size={24} />
-                </button>
+                </motion.button>
                 <img
                   src={selectedWork.image}
                   alt={selectedWork.title}
@@ -207,14 +235,16 @@ const Gallery = () => {
                     </div>
                   )}
                   {selectedWork.link && (
-                    <a
+                    <motion.a
                       href={selectedWork.link}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-block px-6 py-2 bg-primary text-white rounded-lg hover:bg-primary-600 transition-colors"
+                      className="inline-block px-6 py-2 bg-primary text-white rounded-lg hover:bg-primary-600 transition-colors duration-300"
+                      whileHover={{ scale: 1.05 }}
+                      whileTap={{ scale: 0.95 }}
                     >
                       Visit Project
-                    </a>
+                    </motion.a>
                   )}
                 </div>
               </div>
