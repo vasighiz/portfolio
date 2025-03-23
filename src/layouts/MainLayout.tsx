@@ -20,26 +20,26 @@ const MainLayout = () => {
         <div className="lg:w-80 lg:fixed lg:h-screen lg:border-r lg:border-primary-100 bg-white/80 backdrop-blur-sm">
           <div className="p-6 lg:p-8">
             <Header />
-            <nav className="bg-white shadow-md py-4 sticky top-0 z-10">
-              <div className="container mx-auto px-4">
-                <ul className="flex justify-center space-x-8">
-                  {navItems.map((item) => (
-                    <li key={item.path}>
-                      <NavLink
-                        to={item.path}
-                        className={({ isActive }) =>
-                          `flex items-center space-x-2 text-sm font-medium transition-colors duration-200 ${
-                            isActive ? 'text-primary' : 'text-gray-600 hover:text-primary'
-                          }`
-                        }
-                      >
-                        <span className="text-lg">{item.icon}</span>
-                        <span>{item.label}</span>
-                      </NavLink>
-                    </li>
-                  ))}
-                </ul>
-              </div>
+            <nav className="mt-8">
+              <ul className="flex flex-col space-y-4">
+                {navItems.map((item) => (
+                  <li key={item.path}>
+                    <NavLink
+                      to={item.path}
+                      className={({ isActive }) =>
+                        `flex items-center space-x-3 px-4 py-3 rounded-lg transition-colors duration-200 ${
+                          isActive 
+                            ? 'bg-primary/10 text-primary' 
+                            : 'text-gray-600 hover:bg-primary/5 hover:text-primary'
+                        }`
+                      }
+                    >
+                      <span className="text-xl">{item.icon}</span>
+                      <span className="font-medium">{item.label}</span>
+                    </NavLink>
+                  </li>
+                ))}
+              </ul>
             </nav>
           </div>
         </div>
