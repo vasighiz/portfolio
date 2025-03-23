@@ -38,7 +38,7 @@ const Header = () => {
                 transition={{ duration: 0.5, delay: 0.3 }}
               >
                 PhD in Computer Science<br />
-                Machine Learning & AI Researcher
+                Machine Learning & AI
               </motion.p>
             </div>
           </motion.div>

@@ -1,6 +1,5 @@
 // src/layouts/MainLayout.tsx
 import { Outlet, NavLink } from 'react-router-dom';
-import { motion } from 'framer-motion';
 import { FaUser, FaCode, FaFileAlt, FaEnvelope, FaLightbulb, FaImages } from 'react-icons/fa';
 import Header from '../components/Header';
 
