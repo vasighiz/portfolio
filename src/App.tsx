@@ -7,6 +7,7 @@ import Resume from './components/Resume';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
 import Contact from './components/Contact';
+import Gallery from './components/Gallery';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
               <Route path="resume" element={<Resume />} />
               <Route path="skills" element={<Skills />} />
               <Route path="contact" element={<Contact />} />
+              <Route path="gallery" element={<Gallery />} />
               <Route path="*" element={<Navigate to="/" replace />} />
             </Route>
           </Routes>
