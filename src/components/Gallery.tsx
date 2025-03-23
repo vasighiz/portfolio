@@ -30,6 +30,38 @@ const galleryItems: GalleryItem[] = [
     technologies: ["Python", "TensorFlow", "OpenCV"],
     image: "/portfolio/work2.jpg",
   },
+  {
+    id: 2,
+    title: "Project 3",
+    description: "Brief description of project 2",
+    detailedDescription: "Detailed explanation of project 2, including its goals, implementation, and outcomes.",
+    technologies: ["Python", "TensorFlow", "OpenCV"],
+    image: "/portfolio/work3.jpg",
+  },
+  {
+    id: 2,
+    title: "Project 4",
+    description: "Brief description of project 2",
+    detailedDescription: "Detailed explanation of project 2, including its goals, implementation, and outcomes.",
+    technologies: ["Python", "TensorFlow", "OpenCV"],
+    image: "/portfolio/work4.jpg",
+  },
+  {
+    id: 2,
+    title: "Project 2",
+    description: "Brief description of project 2",
+    detailedDescription: "Detailed explanation of project 2, including its goals, implementation, and outcomes.",
+    technologies: ["Python", "TensorFlow", "OpenCV"],
+    image: "/portfolio/work5.jpg",
+  },
+  {
+    id: 2,
+    title: "Project 2",
+    description: "Brief description of project 2",
+    detailedDescription: "Detailed explanation of project 2, including its goals, implementation, and outcomes.",
+    technologies: ["Python", "TensorFlow", "OpenCV"],
+    image: "/portfolio/work6.jpg",
+  },
   // Add more items as needed
 ];
 
