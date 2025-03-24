@@ -25,14 +25,14 @@ const MainLayout = () => {
             <div className="flex-shrink-0">
               <Header />
             </div>
-            <nav className="mt-2">
-              <ul className="flex flex-col space-y-0.5">
+            <nav className="mt-4">
+              <ul className="flex flex-col space-y-1">
                 {navItems.map((item) => (
                   <li key={item.path}>
                     <NavLink
                       to={item.path}
                       className={({ isActive }) =>
-                        `flex items-center space-x-2 px-2 py-1.5 rounded-lg transition-colors duration-200 ${
+                        `flex items-center space-x-3 px-3 py-2 rounded-lg transition-colors duration-200 ${
                           isActive 
                             ? 'bg-primary/10 text-primary' 
                             : 'text-gray-600 hover:bg-primary/5 hover:text-primary'
@@ -40,13 +40,13 @@ const MainLayout = () => {
                       }
                     >
                       <span className="text-lg">{item.icon}</span>
-                      <span className="font-medium text-sm">{item.label}</span>
+                      <span className="font-medium">{item.label}</span>
                     </NavLink>
                   </li>
                 ))}
               </ul>
             </nav>
-            <div className="flex-shrink-0 mt-2 text-center text-gray-500 text-xs">
+            <div className="flex-shrink-0 mt-4 text-center text-gray-500 text-sm">
               <p>© {new Date().getFullYear()} Akram Vasighi</p>
             </div>
           </div>
@@ -55,7 +55,7 @@ const MainLayout = () => {
         {/* Main Content */}
         <div className="flex-1 lg:ml-80">
           <div className="max-w-4xl mx-auto px-4 py-8 md:px-8">
-            <div className="min-h-[calc(100vh-4rem)] rounded-2xl shadow-lg p-8">
+            <div className="min-h-[calc(100vh-4rem)] bg-white/80 backdrop-blur-sm rounded-2xl shadow-lg p-8">
               <Outlet />
             </div>
           </div>
