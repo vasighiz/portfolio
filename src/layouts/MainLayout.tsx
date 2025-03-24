@@ -17,15 +17,15 @@ const MainLayout = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-primary-50 via-white to-primary-100">
+    <div className="min-h-screen bg-[#0A192F]">
       <div className="flex flex-col lg:flex-row min-h-screen">
         {/* Side Header - Fixed on desktop, top on mobile */}
-        <div className="lg:w-80 lg:fixed lg:h-screen lg:border-r lg:border-primary-100 bg-white/80 backdrop-blur-sm">
+        <div className="lg:w-80 lg:fixed lg:h-screen lg:border-r lg:border-[#233554] bg-[#112240]/80 backdrop-blur-sm">
           <div className="h-full flex flex-col p-4">
             <div className="flex-shrink-0">
               <Header />
             </div>
-            <nav className="mt-4 flex-shrink-0">
+            <nav className="mt-4 flex-1 overflow-y-auto">
               <ul className="flex flex-col space-y-1">
                 {navItems.map((item) => (
                   <li key={item.path}>
@@ -34,8 +34,8 @@ const MainLayout = () => {
                       className={({ isActive }) =>
                         `flex items-center space-x-3 px-3 py-2 rounded-lg transition-colors duration-200 ${
                           isActive 
-                            ? 'bg-primary/10 text-primary' 
-                            : 'text-gray-600 hover:bg-primary/5 hover:text-primary'
+                            ? 'bg-[#233554] text-[#FFD700]' 
+                            : 'text-[#8892B0] hover:bg-[#233554]/50 hover:text-[#FFE55C]'
                         }`
                       }
                     >
@@ -46,7 +46,7 @@ const MainLayout = () => {
                 ))}
               </ul>
             </nav>
-            <div className="flex-shrink-0 mt-4 text-center text-gray-500 text-sm">
+            <div className="flex-shrink-0 mt-4 text-center text-[#8892B0] text-sm border-t border-[#233554] pt-4">
               <p>© {new Date().getFullYear()} Akram Vasighi</p>
             </div>
           </div>
@@ -55,7 +55,7 @@ const MainLayout = () => {
         {/* Main Content */}
         <div className="flex-1 lg:ml-80">
           <div className="max-w-4xl mx-auto px-4 py-8 md:px-8">
-            <div className="min-h-[calc(100vh-4rem)] bg-white/80 backdrop-blur-sm rounded-2xl shadow-lg p-8">
+            <div className="min-h-[calc(100vh-4rem)] bg-[#112240]/80 backdrop-blur-sm rounded-2xl shadow-lg p-8 border border-[#233554]">
               <Outlet />
             </div>
           </div>

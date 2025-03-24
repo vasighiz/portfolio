@@ -15,7 +15,7 @@ const Home = () => {
       className="h-full flex flex-col gap-6"
     >
       {/* Hero Banner */}
-      <div className="relative h-[280px] -mx-8 -mt-8">
+      <div className="relative h-[340px] -mx-8 -mt-8">
         <div className="absolute inset-0 bg-gradient-to-r from-[#0A192F] to-[#112240] backdrop-blur shadow-2xl">
           {useCustomBanner ? (
             // Custom banner image option
