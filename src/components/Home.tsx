@@ -16,15 +16,15 @@ const Home = () => {
     >
       {/* Hero Banner */}
       <div className="relative h-[340px] -mx-8 -mt-8">
-        <div className="absolute inset-0 bg-gradient-to-r from-[#0A192F] to-[#112240] backdrop-blur shadow-2xl">
+        <div className="absolute inset-0 bg-gradient-to-r from-[#0B1B2D] to-[#1A2B3C] backdrop-blur shadow-2xl">
           {useCustomBanner ? (
             // Custom banner image option
             <div className="absolute inset-0 bg-[url('/portfolio/banner.jpg')] mix-blend-overlay opacity-50 bg-cover bg-center"></div>
           ) : (
             // Simple gradient background option
             <div className="absolute inset-0">
-              <div className="absolute inset-0 bg-gradient-to-br from-[#112240]/50 via-[#233554]/20 to-[#0A192F]/50"></div>
-              <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.05)_1px,transparent_1px)] bg-[length:24px_24px]"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-[#1A2B3C]/50 via-[#2C3E50]/20 to-[#0B1B2D]/50"></div>
+              <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[length:24px_24px]"></div>
             </div>
           )}
         </div>
@@ -39,7 +39,7 @@ const Home = () => {
               Welcome to My Portfolio
             </motion.h1>
             <motion.p 
-              className="text-lg md:text-xl text-[#8892B0] mb-6"
+              className="text-lg md:text-xl text-[#94A3B8] mb-6"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
@@ -53,7 +53,7 @@ const Home = () => {
             >
               <Link 
                 to="/about" 
-                className="inline-flex items-center space-x-2 bg-[#233554] text-[#FFD700] px-5 py-2.5 rounded-lg font-medium hover:bg-[#2A4163] hover:text-[#FFE55C] transition-colors duration-300 shadow-lg shadow-[#233554]/20 hover:shadow-xl hover:shadow-[#233554]/30"
+                className="inline-flex items-center space-x-2 bg-[#1A2B3C] text-[#60A5FA] px-5 py-2.5 rounded-lg font-medium hover:bg-[#2C3E50] hover:text-[#93C5FD] transition-colors duration-300 shadow-lg shadow-[#1A2B3C]/20 hover:shadow-xl hover:shadow-[#1A2B3C]/30"
               >
                 <span>Learn More</span>
                 <FaArrowRight />
@@ -66,33 +66,33 @@ const Home = () => {
       {/* Quick Links Section */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         <motion.div 
-          className="bg-white/80 backdrop-blur-sm rounded-xl p-6 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-gray-100 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-all duration-300"
+          className="bg-white/90 backdrop-blur-sm rounded-xl p-6 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-[#E2E8F0] hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-all duration-300"
           whileHover={{ y: -4 }}
         >
-          <FaGraduationCap className="text-3xl text-primary-600 mb-4" />
-          <h3 className="text-xl font-semibold text-gray-900 mb-2">Education</h3>
-          <p className="text-gray-600">PhD in Computer Science</p>
-          <p className="text-gray-500 text-sm">2018 - 2022</p>
+          <FaGraduationCap className="text-3xl text-[#1A2B3C] mb-4" />
+          <h3 className="text-xl font-semibold text-[#0B1B2D] mb-2">Education</h3>
+          <p className="text-[#334155]">PhD in Computer Science</p>
+          <p className="text-[#64748B] text-sm">2018 - 2022</p>
         </motion.div>
 
         <motion.div 
-          className="bg-white/80 backdrop-blur-sm rounded-xl p-6 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-gray-100 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-all duration-300"
+          className="bg-white/90 backdrop-blur-sm rounded-xl p-6 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-[#E2E8F0] hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-all duration-300"
           whileHover={{ y: -4 }}
         >
-          <FaBriefcase className="text-3xl text-primary-600 mb-4" />
-          <h3 className="text-xl font-semibold text-gray-900 mb-2">Experience</h3>
-          <p className="text-gray-600">Research Scientist</p>
-          <p className="text-gray-500 text-sm">2022 - Present</p>
+          <FaBriefcase className="text-3xl text-[#1A2B3C] mb-4" />
+          <h3 className="text-xl font-semibold text-[#0B1B2D] mb-2">Experience</h3>
+          <p className="text-[#334155]">Research Scientist</p>
+          <p className="text-[#64748B] text-sm">2022 - Present</p>
         </motion.div>
 
         <motion.div 
-          className="bg-white/80 backdrop-blur-sm rounded-xl p-6 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-gray-100 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-all duration-300"
+          className="bg-white/90 backdrop-blur-sm rounded-xl p-6 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-[#E2E8F0] hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-all duration-300"
           whileHover={{ y: -4 }}
         >
-          <FaAward className="text-3xl text-primary-600 mb-4" />
-          <h3 className="text-xl font-semibold text-gray-900 mb-2">Expertise</h3>
-          <p className="text-gray-600">Machine Learning & AI</p>
-          <p className="text-gray-500 text-sm">Deep Learning, Bioinformatics</p>
+          <FaAward className="text-3xl text-[#1A2B3C] mb-4" />
+          <h3 className="text-xl font-semibold text-[#0B1B2D] mb-2">Expertise</h3>
+          <p className="text-[#334155]">Machine Learning & AI</p>
+          <p className="text-[#64748B] text-sm">Deep Learning, Bioinformatics</p>
         </motion.div>
       </div>
     </motion.div>
