@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { FaGithub, FaLinkedin, FaEnvelope, FaArrowRight, FaGraduationCap, FaBriefcase, FaAward } from 'react-icons/fa';
+import { FaArrowRight, FaGraduationCap, FaBriefcase, FaAward } from 'react-icons/fa';
 
 // You can switch between these two options by changing this value
 const useCustomBanner = false;
