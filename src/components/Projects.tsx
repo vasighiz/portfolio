@@ -7,19 +7,25 @@ const Projects = () => {
       title: 'Deep Learning for Healthcare',
       description: 'Research project focusing on applying deep learning techniques to medical imaging analysis.',
       technologies: ['Python', 'TensorFlow', 'PyTorch', 'Medical Imaging'],
-      image: '/portfolio/project1.jpg'
+      image: '/portfolio/project1.jpg',
+      githubUrl: 'https://github.com/yourusername/healthcare-dl',
+      liveUrl: 'https://healthcare-dl-demo.com'
     },
     {
       title: 'AI-Powered Bioinformatics',
       description: 'Development of machine learning models for genomic data analysis and prediction.',
       technologies: ['Python', 'Scikit-learn', 'Bioinformatics', 'Data Analysis'],
-      image: '/portfolio/project2.jpg'
+      image: '/portfolio/project2.jpg',
+      githubUrl: 'https://github.com/yourusername/bioinformatics-ai',
+      liveUrl: 'https://bioinformatics-ai-demo.com'
     },
     {
       title: 'Neural Network Optimization',
       description: 'Research on optimizing neural network architectures for improved performance.',
       technologies: ['Python', 'Deep Learning', 'Optimization', 'Research'],
-      image: '/portfolio/project3.jpg'
+      image: '/portfolio/project3.jpg',
+      githubUrl: 'https://github.com/yourusername/nn-optimization',
+      liveUrl: 'https://nn-optimization-demo.com'
     }
   ];
 
