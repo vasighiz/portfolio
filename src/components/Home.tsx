@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { FaArrowRight, FaGraduationCap, FaBriefcase, FaAward, FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
+import { FaArrowRight, FaGraduationCap, FaBriefcase, FaBrain, FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 
 // You can switch between these two options by changing this value
 const useCustomBanner = false;
@@ -89,7 +89,7 @@ const Home = () => {
           className="bg-white/90 backdrop-blur-sm rounded-xl p-6 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-[#E2E8F0] hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-all duration-300"
           whileHover={{ y: -4 }}
         >
-          <FaAward className="text-3xl text-[#1A2B3C] mb-4" />
+          <FaBrain className="text-3xl text-[#1A2B3C] mb-4" />
           <h3 className="text-xl font-semibold text-[#0B1B2D] mb-3">Expertise</h3>
           <p className="text-[#334155]">Machine Learning & AI</p>
           <p className="text-[#334155] text-sm">Deep Learning, Bioinformatics</p>
