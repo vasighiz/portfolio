@@ -15,7 +15,7 @@ const Home = () => {
     >
       {/* Hero Banner */}
       <div className="relative h-[300px] -mx-8 -mt-8 mb-12">
-        <div className="absolute inset-0 bg-gradient-to-r from-[#0A192F] to-[#112240] backdrop-blur">
+        <div className="absolute inset-0 bg-gradient-to-r from-[#0A192F] to-[#112240] backdrop-blur shadow-2xl">
           {useCustomBanner ? (
             // Custom banner image option
             <div className="absolute inset-0 bg-[url('/portfolio/banner.jpg')] mix-blend-overlay opacity-50 bg-cover bg-center"></div>
