@@ -1,6 +1,6 @@
 // src/layouts/MainLayout.tsx
 import { Outlet, NavLink } from 'react-router-dom';
-import { FaUser, FaCode, FaFileAlt, FaEnvelope, FaLightbulb, FaImages, FaHome, FaStar } from 'react-icons/fa';
+import { FaUser, FaCode, FaFileAlt, FaEnvelope, FaLightbulb, FaImages, FaHome, FaStar, FaBook } from 'react-icons/fa';
 import Header from '../components/Header';
 
 const MainLayout = () => {
@@ -12,6 +12,7 @@ const MainLayout = () => {
     { path: '/skills', icon: <FaLightbulb />, label: 'Skills' },
     { path: '/gallery', icon: <FaImages />, label: 'Gallery' },
     { path: '/testimonials', icon: <FaStar />, label: 'Testimonials' },
+    { path: '/blog', icon: <FaBook />, label: 'Blog' },
     { path: '/contact', icon: <FaEnvelope />, label: 'Contact' },
   ];
 
