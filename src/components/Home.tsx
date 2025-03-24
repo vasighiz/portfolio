@@ -15,14 +15,14 @@ const Home = () => {
     >
       {/* Hero Banner */}
       <div className="relative h-[300px] -mx-8 -mt-8 mb-12">
-        <div className="absolute inset-0 bg-gradient-to-r from-purple-900/95 to-purple-800/95 backdrop-blur">
+        <div className="absolute inset-0 bg-gradient-to-r from-primary-700 to-primary-600 backdrop-blur">
           {useCustomBanner ? (
             // Custom banner image option
             <div className="absolute inset-0 bg-[url('/portfolio/banner.jpg')] mix-blend-overlay opacity-50 bg-cover bg-center"></div>
           ) : (
             // Simple gradient background option
             <div className="absolute inset-0">
-              <div className="absolute inset-0 bg-gradient-to-br from-purple-800/50 via-pink-900/20 to-purple-950/50"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-primary-600/50 via-secondary/20 to-primary-800/50"></div>
               <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.08)_1px,transparent_1px)] bg-[length:24px_24px]"></div>
             </div>
           )}
@@ -38,7 +38,7 @@ const Home = () => {
               Welcome to My Portfolio
             </motion.h1>
             <motion.p 
-              className="text-lg md:text-xl text-pink-100 mb-8"
+              className="text-lg md:text-xl text-primary-50 mb-8"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
@@ -52,7 +52,7 @@ const Home = () => {
             >
               <Link 
                 to="/about" 
-                className="inline-flex items-center space-x-2 bg-white text-purple-900 px-6 py-3 rounded-lg font-medium hover:bg-pink-50 transition-colors duration-300"
+                className="inline-flex items-center space-x-2 bg-white text-primary-700 px-6 py-3 rounded-lg font-medium hover:bg-primary-50 transition-colors duration-300"
               >
                 <span>Learn More</span>
                 <FaArrowRight />
@@ -69,9 +69,9 @@ const Home = () => {
           whileHover={{ scale: 1.02 }}
           transition={{ duration: 0.2 }}
         >
-          <h3 className="text-xl font-semibold mb-3 text-purple-900">Research Work</h3>
+          <h3 className="text-xl font-semibold mb-3 text-primary-700">Research Work</h3>
           <p className="text-gray-600 mb-4">Explore my research contributions in Machine Learning and AI.</p>
-          <Link to="/projects" className="text-purple-700 hover:text-purple-500">View Projects →</Link>
+          <Link to="/projects" className="text-primary hover:text-primary-600">View Projects →</Link>
         </motion.div>
 
         <motion.div
@@ -79,9 +79,9 @@ const Home = () => {
           whileHover={{ scale: 1.02 }}
           transition={{ duration: 0.2 }}
         >
-          <h3 className="text-xl font-semibold mb-3 text-purple-900">Gallery</h3>
+          <h3 className="text-xl font-semibold mb-3 text-primary-700">Gallery</h3>
           <p className="text-gray-600 mb-4">Visual showcase of my work and achievements.</p>
-          <Link to="/gallery" className="text-purple-700 hover:text-purple-500">View Gallery →</Link>
+          <Link to="/gallery" className="text-primary hover:text-primary-600">View Gallery →</Link>
         </motion.div>
 
         <motion.div
@@ -89,9 +89,9 @@ const Home = () => {
           whileHover={{ scale: 1.02 }}
           transition={{ duration: 0.2 }}
         >
-          <h3 className="text-xl font-semibold mb-3 text-purple-900">Get in Touch</h3>
+          <h3 className="text-xl font-semibold mb-3 text-primary-700">Get in Touch</h3>
           <p className="text-gray-600 mb-4">Interested in collaboration? Let's connect.</p>
-          <Link to="/contact" className="text-purple-700 hover:text-purple-500">Contact Me →</Link>
+          <Link to="/contact" className="text-primary hover:text-primary-600">Contact Me →</Link>
         </motion.div>
       </div>
 
@@ -104,7 +104,7 @@ const Home = () => {
       >
         <Link 
           to="/testimonials" 
-          className="inline-flex items-center space-x-2 text-purple-700 hover:text-purple-500"
+          className="inline-flex items-center space-x-2 text-primary hover:text-primary-600"
         >
           <span>View Testimonials</span>
           <FaArrowRight />
