@@ -25,7 +25,7 @@ const MainLayout = () => {
             <div className="flex-shrink-0">
               <Header />
             </div>
-            <nav className="mt-4 flex-1 overflow-y-auto">
+            <nav className="mt-4">
               <ul className="flex flex-col space-y-1">
                 {navItems.map((item) => (
                   <li key={item.path}>
@@ -55,7 +55,7 @@ const MainLayout = () => {
         {/* Main Content */}
         <div className="flex-1 lg:ml-80">
           <div className="max-w-4xl mx-auto px-4 py-8 md:px-8">
-            <div className="min-h-[calc(100vh-4rem)] bg-white/80 backdrop-blur-sm rounded-2xl shadow-lg p-8">
+            <div className="min-h-[calc(100vh-4rem)] rounded-2xl shadow-lg p-8">
               <Outlet />
             </div>
           </div>
