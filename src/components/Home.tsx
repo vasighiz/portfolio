@@ -66,7 +66,7 @@ const Home = () => {
       {/* Quick Links Section */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 flex-1">
         <motion.div
-          className="bg-[#112240] rounded-xl shadow-lg p-5 hover:shadow-xl transition-shadow duration-300 border border-[#233554] flex flex-col"
+          className="bg-[#0A192F] rounded-xl shadow-lg p-5 hover:shadow-xl transition-shadow duration-300 border border-[#233554] flex flex-col"
           whileHover={{ scale: 1.02 }}
           transition={{ duration: 0.2 }}
         >
@@ -76,7 +76,7 @@ const Home = () => {
         </motion.div>
 
         <motion.div
-          className="bg-[#112240] rounded-xl shadow-lg p-5 hover:shadow-xl transition-shadow duration-300 border border-[#233554] flex flex-col"
+          className="bg-[#0A192F] rounded-xl shadow-lg p-5 hover:shadow-xl transition-shadow duration-300 border border-[#233554] flex flex-col"
           whileHover={{ scale: 1.02 }}
           transition={{ duration: 0.2 }}
         >
@@ -86,7 +86,7 @@ const Home = () => {
         </motion.div>
 
         <motion.div
-          className="bg-[#112240] rounded-xl shadow-lg p-5 hover:shadow-xl transition-shadow duration-300 border border-[#233554] flex flex-col"
+          className="bg-[#0A192F] rounded-xl shadow-lg p-5 hover:shadow-xl transition-shadow duration-300 border border-[#233554] flex flex-col"
           whileHover={{ scale: 1.02 }}
           transition={{ duration: 0.2 }}
         >
