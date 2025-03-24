@@ -1,72 +1,63 @@
 // src/layouts/MainLayout.tsx
-import { Outlet, Link, useLocation } from 'react-router-dom';
-import { motion } from 'framer-motion';
-import { FaHome, FaUser, FaCode, FaFileAlt, FaCogs, FaImages, FaBook, FaComments } from 'react-icons/fa';
+import { Outlet, NavLink } from 'react-router-dom';
+import { FaUser, FaCode, FaFileAlt, FaLightbulb, FaImages, FaHome, FaStar, FaBook } from 'react-icons/fa';
+import Header from '../components/Header';
 
 const MainLayout = () => {
-  const location = useLocation();
-
   const navItems = [
     { path: '/', icon: <FaHome />, label: 'Home' },
     { path: '/about', icon: <FaUser />, label: 'About' },
     { path: '/projects', icon: <FaCode />, label: 'Projects' },
     { path: '/resume', icon: <FaFileAlt />, label: 'Resume' },
-    { path: '/skills', icon: <FaCogs />, label: 'Skills' },
+    { path: '/skills', icon: <FaLightbulb />, label: 'Skills' },
     { path: '/gallery', icon: <FaImages />, label: 'Gallery' },
     { path: '/blog', icon: <FaBook />, label: 'Blog' },
-    { path: '/testimonials', icon: <FaComments />, label: 'Testimonials' }
+    { path: '/testimonials', icon: <FaStar />, label: 'Testimonials' }
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-[#F8FAFC] via-white to-[#F1F5F9]">
-      <div className="flex">
-        {/* Side Navigation */}
-        <div className="w-64 min-h-screen bg-white/90 backdrop-blur-sm shadow-[0_8px_30px_rgb(0,0,0,0.04)] border-r border-[#E2E8F0] flex flex-col">
-          <motion.div 
-            className="p-6"
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-          >
-            <h1 className="text-2xl font-bold text-[#0B1B2D]">Portfolio</h1>
-          </motion.div>
-          <nav className="flex-1 overflow-y-auto px-4 py-2">
-            {navItems.map((item, index) => (
-              <motion.div
-                key={item.path}
-                initial={{ opacity: 0, x: -20 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.3, delay: index * 0.05 }}
-              >
-                <Link
-                  to={item.path}
-                  className={`flex items-center space-x-3 px-4 py-3 rounded-lg mb-1 transition-colors duration-200 ${
-                    location.pathname === item.path
-                      ? 'bg-[#1A2B3C] text-white shadow-md'
-                      : 'text-[#334155] hover:bg-[#F1F5F9] hover:text-[#0B1B2D]'
-                  }`}
-                >
-                  <span className="text-lg">{item.icon}</span>
-                  <span>{item.label}</span>
-                </Link>
-              </motion.div>
-            ))}
-          </nav>
-          <motion.div 
-            className="p-4 border-t border-[#E2E8F0]"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.5, delay: 0.5 }}
-          >
-            <p className="text-sm text-[#64748B] text-center">
-              © 2024 Portfolio. All rights reserved.
-            </p>
-          </motion.div>
+    <div className="min-h-screen bg-gradient-to-br from-primary-50 via-white to-primary-100">
+      <div className="flex flex-col lg:flex-row min-h-screen">
+        {/* Side Header - Fixed on desktop, top on mobile */}
+        <div className="lg:w-80 lg:fixed lg:h-screen lg:border-r lg:border-primary-100 bg-white/80 backdrop-blur-sm">
+          <div className="h-full flex flex-col p-3">
+            <div className="flex-shrink-0">
+              <Header />
+            </div>
+            <nav className="mt-2">
+              <ul className="flex flex-col space-y-0.5">
+                {navItems.map((item) => (
+                  <li key={item.path}>
+                    <NavLink
+                      to={item.path}
+                      className={({ isActive }) =>
+                        `flex items-center space-x-2 px-2.5 py-1.5 rounded-lg transition-colors duration-200 ${
+                          isActive 
+                            ? 'bg-primary/10 text-primary' 
+                            : 'text-gray-600 hover:bg-primary/5 hover:text-primary'
+                        }`
+                      }
+                    >
+                      <span className="text-base">{item.icon}</span>
+                      <span className="font-medium text-sm">{item.label}</span>
+                    </NavLink>
+                  </li>
+                ))}
+              </ul>
+            </nav>
+            <div className="flex-shrink-0 mt-2 text-center text-gray-500 text-xs">
+              <p>© {new Date().getFullYear()} Akram Vasighi</p>
+            </div>
+          </div>
         </div>
 
         {/* Main Content */}
-        <div className="flex-1 p-8">
-          <Outlet />
+        <div className="flex-1 lg:ml-80">
+          <div className="max-w-4xl mx-auto px-4 py-8 md:px-8">
+            <div className="min-h-[calc(100vh-4rem)] bg-white/80 backdrop-blur-sm rounded-2xl shadow-lg p-8">
+              <Outlet />
+            </div>
+          </div>
         </div>
       </div>
     </div>
