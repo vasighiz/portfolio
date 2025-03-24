@@ -16,10 +16,10 @@ const MainLayout = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-primary-50 via-white to-primary-100">
+    <div className="min-h-screen bg-gradient-to-br from-[#F8FAFC] via-white to-[#F1F5F9]">
       <div className="flex flex-col lg:flex-row min-h-screen">
         {/* Side Header - Fixed on desktop, top on mobile */}
-        <div className="lg:w-80 lg:fixed lg:h-screen lg:border-r lg:border-primary-100 bg-white/80 backdrop-blur-sm">
+        <div className="lg:w-80 lg:fixed lg:h-screen lg:border-r lg:border-[#E2E8F0] bg-white/90 backdrop-blur-sm shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
           <div className="h-full flex flex-col p-3">
             <div className="flex-shrink-0">
               <Header />
@@ -33,8 +33,8 @@ const MainLayout = () => {
                       className={({ isActive }) =>
                         `flex items-center space-x-2 px-2.5 py-1.5 rounded-lg transition-colors duration-200 ${
                           isActive 
-                            ? 'bg-primary/10 text-primary' 
-                            : 'text-gray-600 hover:bg-primary/5 hover:text-primary'
+                            ? 'bg-[#1A2B3C] text-white shadow-md' 
+                            : 'text-[#334155] hover:bg-[#F1F5F9] hover:text-[#0B1B2D]'
                         }`
                       }
                     >
@@ -45,7 +45,7 @@ const MainLayout = () => {
                 ))}
               </ul>
             </nav>
-            <div className="flex-shrink-0 mt-2 text-center text-gray-500 text-xs">
+            <div className="flex-shrink-0 mt-2 text-center text-[#64748B] text-xs">
               <p>© {new Date().getFullYear()} Akram Vasighi</p>
             </div>
           </div>
@@ -54,7 +54,7 @@ const MainLayout = () => {
         {/* Main Content */}
         <div className="flex-1 lg:ml-80">
           <div className="max-w-4xl mx-auto px-4 py-8 md:px-8">
-            <div className="min-h-[calc(100vh-4rem)] bg-white/80 backdrop-blur-sm rounded-2xl shadow-lg p-8">
+            <div className="min-h-[calc(100vh-4rem)] bg-white/90 backdrop-blur-sm rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] p-8">
               <Outlet />
             </div>
           </div>

@@ -1,46 +1,56 @@
+import { motion } from 'framer-motion';
 import ProjectCard from './ProjectCard';
 
 const Projects = () => {
   const projects = [
     {
-      title: "CRISPR Dashboard",
-      description: "A comprehensive dashboard built with Streamlit for analyzing CRISPR experiments. Features include data visualization, statistical analysis, and interactive filtering capabilities.",
-      technologies: ["Python", "Streamlit", "MAGeCK", "Pandas", "Plotly"],
-      githubUrl: "https://github.com/yourusername/crispr-dashboard",
-      liveUrl: "https://crispr-dashboard-demo.streamlit.app",
+      title: 'Deep Learning for Healthcare',
+      description: 'Research project focusing on applying deep learning techniques to medical imaging analysis.',
+      technologies: ['Python', 'TensorFlow', 'PyTorch', 'Medical Imaging'],
+      image: '/portfolio/project1.jpg'
     },
     {
-      title: "ML Portfolio",
-      description: "A modern, responsive portfolio website showcasing machine learning projects and technical skills. Built with React, Tailwind CSS, and Framer Motion for smooth animations.",
-      technologies: ["React", "TypeScript", "Tailwind CSS", "Framer Motion"],
-      githubUrl: "https://github.com/yourusername/ml-portfolio",
-      liveUrl: "https://your-portfolio-demo.netlify.app",
+      title: 'AI-Powered Bioinformatics',
+      description: 'Development of machine learning models for genomic data analysis and prediction.',
+      technologies: ['Python', 'Scikit-learn', 'Bioinformatics', 'Data Analysis'],
+      image: '/portfolio/project2.jpg'
     },
     {
-      title: "Data Analysis Pipeline",
-      description: "An automated data analysis pipeline for processing large-scale genomic datasets. Includes data cleaning, normalization, and statistical analysis modules.",
-      technologies: ["Python", "Snakemake", "R", "Bioconductor"],
-      githubUrl: "https://github.com/yourusername/data-pipeline",
-      liveUrl: "",
-    },
+      title: 'Neural Network Optimization',
+      description: 'Research on optimizing neural network architectures for improved performance.',
+      technologies: ['Python', 'Deep Learning', 'Optimization', 'Research'],
+      image: '/portfolio/project3.jpg'
+    }
   ];
 
   return (
-    <div className="max-w-4xl mx-auto">
-      <h2 className="text-3xl font-light mb-8 text-gray-900">Projects</h2>
-      <div className="space-y-8">
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.8 }}
+      className="space-y-8"
+    >
+      <div>
+        <h1 className="text-4xl font-bold text-[#0B1B2D] mb-4">Research Projects</h1>
+        <p className="text-[#334155] leading-relaxed">
+          Explore my research contributions in Machine Learning and Artificial Intelligence.
+        </p>
+      </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {projects.map((project, index) => (
-          <ProjectCard
-            key={index}
-            title={project.title}
-            description={project.description}
-            technologies={project.technologies}
-            githubUrl={project.githubUrl}
-            liveUrl={project.liveUrl}
-          />
+          <motion.div
+            key={project.title}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: index * 0.1 }}
+          >
+            <ProjectCard {...project} />
+          </motion.div>
         ))}
       </div>
-    </div>
+    </motion.div>
   );
 };
 
