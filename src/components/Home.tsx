@@ -52,7 +52,7 @@ const Home = () => {
             >
               <Link 
                 to="/about" 
-                className="inline-flex items-center space-x-2 bg-[#233554] text-[#CCD6F6] px-6 py-3 rounded-lg font-medium hover:bg-[#2A4163] transition-colors duration-300"
+                className="inline-flex items-center space-x-2 bg-[#233554] text-[#FFD700] px-6 py-3 rounded-lg font-medium hover:bg-[#2A4163] hover:text-[#FFE55C] transition-colors duration-300"
               >
                 <span>Learn More</span>
                 <FaArrowRight />
@@ -71,7 +71,7 @@ const Home = () => {
         >
           <h3 className="text-xl font-semibold mb-3 text-[#CCD6F6]">Research Work</h3>
           <p className="text-[#8892B0] mb-4">Explore my research contributions in Machine Learning and AI.</p>
-          <Link to="/projects" className="text-[#64FFDA] hover:text-[#64FFDA]/80">View Projects →</Link>
+          <Link to="/projects" className="text-[#FFD700] hover:text-[#FFE55C]">View Projects →</Link>
         </motion.div>
 
         <motion.div
@@ -81,7 +81,7 @@ const Home = () => {
         >
           <h3 className="text-xl font-semibold mb-3 text-[#CCD6F6]">Gallery</h3>
           <p className="text-[#8892B0] mb-4">Visual showcase of my work and achievements.</p>
-          <Link to="/gallery" className="text-[#64FFDA] hover:text-[#64FFDA]/80">View Gallery →</Link>
+          <Link to="/gallery" className="text-[#FFD700] hover:text-[#FFE55C]">View Gallery →</Link>
         </motion.div>
 
         <motion.div
@@ -91,7 +91,7 @@ const Home = () => {
         >
           <h3 className="text-xl font-semibold mb-3 text-[#CCD6F6]">Get in Touch</h3>
           <p className="text-[#8892B0] mb-4">Interested in collaboration? Let's connect.</p>
-          <Link to="/contact" className="text-[#64FFDA] hover:text-[#64FFDA]/80">Contact Me →</Link>
+          <Link to="/contact" className="text-[#FFD700] hover:text-[#FFE55C]">Contact Me →</Link>
         </motion.div>
       </div>
 
@@ -104,7 +104,7 @@ const Home = () => {
       >
         <Link 
           to="/testimonials" 
-          className="inline-flex items-center space-x-2 text-[#64FFDA] hover:text-[#64FFDA]/80"
+          className="inline-flex items-center space-x-2 text-[#FFD700] hover:text-[#FFE55C]"
         >
           <span>View Testimonials</span>
           <FaArrowRight />
