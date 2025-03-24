@@ -1,9 +1,6 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { FaArrowRight, FaGraduationCap, FaBriefcase, FaAward, FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
-
-// You can switch between these two options by changing this value
-const useCustomBanner = false;
+import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 
 const Home = () => {
   return (
