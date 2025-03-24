@@ -1,0 +1,5 @@
+banner.jpg (if using custom banner)
+profile.jpg (for profile option and header)
+work1.jpg through work7.jpg (gallery images)
+linkedin-rec1.jpg, linkedin-rec2.jpg, etc. (LinkedIn recommendation screenshots)
+testimonial1.jpg through testimonial3.jpg (testimonial profile photos)
