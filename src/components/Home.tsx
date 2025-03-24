@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { FaArrowRight } from 'react-icons/fa';
+import { FaArrowRight, FaGraduationCap, FaBriefcase, FaAward } from 'react-icons/fa';
 
 // You can switch between these two options by changing this value
 const useCustomBanner = false;
@@ -64,36 +64,27 @@ const Home = () => {
       </div>
 
       {/* Quick Links Section */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 flex-1">
-        <motion.div
-          className="bg-[#0A192F] rounded-xl shadow-lg p-5 hover:shadow-xl transition-shadow duration-300 border border-[#233554] flex flex-col"
-          whileHover={{ scale: 1.02 }}
-          transition={{ duration: 0.2 }}
-        >
-          <h3 className="text-xl font-semibold mb-3 text-[#CCD6F6]">Research Work</h3>
-          <p className="text-[#8892B0] mb-4 flex-1">Explore my research contributions in Machine Learning and AI.</p>
-          <Link to="/projects" className="text-[#FFD700] hover:text-[#FFE55C]">View Projects →</Link>
-        </motion.div>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="bg-white rounded-xl p-6 shadow-sm border border-gray-200">
+          <FaGraduationCap className="text-3xl text-primary-600 mb-4" />
+          <h3 className="text-xl font-semibold text-gray-900 mb-2">Education</h3>
+          <p className="text-gray-600">PhD in Computer Science</p>
+          <p className="text-gray-500 text-sm">2018 - 2022</p>
+        </div>
 
-        <motion.div
-          className="bg-[#0A192F] rounded-xl shadow-lg p-5 hover:shadow-xl transition-shadow duration-300 border border-[#233554] flex flex-col"
-          whileHover={{ scale: 1.02 }}
-          transition={{ duration: 0.2 }}
-        >
-          <h3 className="text-xl font-semibold mb-3 text-[#CCD6F6]">Gallery</h3>
-          <p className="text-[#8892B0] mb-4 flex-1">Visual showcase of my work and achievements.</p>
-          <Link to="/gallery" className="text-[#FFD700] hover:text-[#FFE55C]">View Gallery →</Link>
-        </motion.div>
+        <div className="bg-white rounded-xl p-6 shadow-sm border border-gray-200">
+          <FaBriefcase className="text-3xl text-primary-600 mb-4" />
+          <h3 className="text-xl font-semibold text-gray-900 mb-2">Experience</h3>
+          <p className="text-gray-600">Research Scientist</p>
+          <p className="text-gray-500 text-sm">2022 - Present</p>
+        </div>
 
-        <motion.div
-          className="bg-[#0A192F] rounded-xl shadow-lg p-5 hover:shadow-xl transition-shadow duration-300 border border-[#233554] flex flex-col"
-          whileHover={{ scale: 1.02 }}
-          transition={{ duration: 0.2 }}
-        >
-          <h3 className="text-xl font-semibold mb-3 text-[#CCD6F6]">Get in Touch</h3>
-          <p className="text-[#8892B0] mb-4 flex-1">Interested in collaboration? Let's connect.</p>
-          <Link to="/contact" className="text-[#FFD700] hover:text-[#FFE55C]">Contact Me →</Link>
-        </motion.div>
+        <div className="bg-white rounded-xl p-6 shadow-sm border border-gray-200">
+          <FaAward className="text-3xl text-primary-600 mb-4" />
+          <h3 className="text-xl font-semibold text-gray-900 mb-2">Expertise</h3>
+          <p className="text-gray-600">Machine Learning & AI</p>
+          <p className="text-gray-500 text-sm">Deep Learning, Bioinformatics</p>
+        </div>
       </div>
     </motion.div>
   );
