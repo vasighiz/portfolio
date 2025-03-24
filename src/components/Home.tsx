@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { FaArrowRight } from 'react-icons/fa';
 
 // You can switch between these two options by changing this value
-const BANNER_TYPE: 'profile' | 'custom' = 'profile';
+const useCustomBanner = false;
 
 const Home = () => {
   return (
@@ -16,7 +16,7 @@ const Home = () => {
       {/* Hero Banner */}
       <div className="relative h-[300px] -mx-8 -mt-8 mb-12">
         <div className="absolute inset-0 bg-gradient-to-r from-primary/90 to-primary-600/90 backdrop-blur">
-          {BANNER_TYPE === 'custom' ? (
+          {useCustomBanner ? (
             // Custom banner image option
             <div className="absolute inset-0 bg-[url('/portfolio/banner.jpg')] mix-blend-overlay opacity-50 bg-cover bg-center"></div>
           ) : (
