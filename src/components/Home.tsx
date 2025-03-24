@@ -15,17 +15,15 @@ const Home = () => {
     >
       {/* Hero Banner */}
       <div className="relative h-[300px] -mx-8 -mt-8 mb-12">
-        <div className="absolute inset-0 bg-gradient-to-r from-primary/90 to-primary-600/90 backdrop-blur">
+        <div className="absolute inset-0 bg-gradient-to-r from-slate-900/95 to-slate-800/95 backdrop-blur">
           {useCustomBanner ? (
             // Custom banner image option
             <div className="absolute inset-0 bg-[url('/portfolio/banner.jpg')] mix-blend-overlay opacity-50 bg-cover bg-center"></div>
           ) : (
-            // Profile photo option
-            <div className="absolute inset-0 flex items-center justify-center">
-              <div className="relative w-48 h-48">
-                <div className="absolute inset-0 bg-[url('/portfolio/profile.jpg')] rounded-full bg-cover bg-center border-4 border-white/20"></div>
-                <div className="absolute inset-0 bg-gradient-to-b from-transparent to-primary/90 rounded-full mix-blend-overlay"></div>
-              </div>
+            // Simple gradient background option
+            <div className="absolute inset-0">
+              <div className="absolute inset-0 bg-gradient-to-br from-slate-800/50 via-slate-900/30 to-slate-950/50"></div>
+              <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.07)_1px,transparent_1px)] bg-[length:24px_24px]"></div>
             </div>
           )}
         </div>
@@ -40,7 +38,7 @@ const Home = () => {
               Welcome to My Portfolio
             </motion.h1>
             <motion.p 
-              className="text-lg md:text-xl text-white/90 mb-8"
+              className="text-lg md:text-xl text-slate-200 mb-8"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
@@ -54,7 +52,7 @@ const Home = () => {
             >
               <Link 
                 to="/about" 
-                className="inline-flex items-center space-x-2 bg-white text-primary px-6 py-3 rounded-lg font-medium hover:bg-primary-50 transition-colors duration-300"
+                className="inline-flex items-center space-x-2 bg-white text-slate-900 px-6 py-3 rounded-lg font-medium hover:bg-slate-100 transition-colors duration-300"
               >
                 <span>Learn More</span>
                 <FaArrowRight />
@@ -71,9 +69,9 @@ const Home = () => {
           whileHover={{ scale: 1.02 }}
           transition={{ duration: 0.2 }}
         >
-          <h3 className="text-xl font-semibold mb-3">Research Work</h3>
-          <p className="text-gray-600 mb-4">Explore my research contributions in Machine Learning and AI.</p>
-          <Link to="/projects" className="text-primary hover:text-primary-600">View Projects →</Link>
+          <h3 className="text-xl font-semibold mb-3 text-slate-900">Research Work</h3>
+          <p className="text-slate-600 mb-4">Explore my research contributions in Machine Learning and AI.</p>
+          <Link to="/projects" className="text-slate-800 hover:text-slate-600">View Projects →</Link>
         </motion.div>
 
         <motion.div
@@ -81,9 +79,9 @@ const Home = () => {
           whileHover={{ scale: 1.02 }}
           transition={{ duration: 0.2 }}
         >
-          <h3 className="text-xl font-semibold mb-3">Gallery</h3>
-          <p className="text-gray-600 mb-4">Visual showcase of my work and achievements.</p>
-          <Link to="/gallery" className="text-primary hover:text-primary-600">View Gallery →</Link>
+          <h3 className="text-xl font-semibold mb-3 text-slate-900">Gallery</h3>
+          <p className="text-slate-600 mb-4">Visual showcase of my work and achievements.</p>
+          <Link to="/gallery" className="text-slate-800 hover:text-slate-600">View Gallery →</Link>
         </motion.div>
 
         <motion.div
@@ -91,9 +89,9 @@ const Home = () => {
           whileHover={{ scale: 1.02 }}
           transition={{ duration: 0.2 }}
         >
-          <h3 className="text-xl font-semibold mb-3">Get in Touch</h3>
-          <p className="text-gray-600 mb-4">Interested in collaboration? Let's connect.</p>
-          <Link to="/contact" className="text-primary hover:text-primary-600">Contact Me →</Link>
+          <h3 className="text-xl font-semibold mb-3 text-slate-900">Get in Touch</h3>
+          <p className="text-slate-600 mb-4">Interested in collaboration? Let's connect.</p>
+          <Link to="/contact" className="text-slate-800 hover:text-slate-600">Contact Me →</Link>
         </motion.div>
       </div>
 
@@ -106,7 +104,7 @@ const Home = () => {
       >
         <Link 
           to="/testimonials" 
-          className="inline-flex items-center space-x-2 text-primary hover:text-primary-600"
+          className="inline-flex items-center space-x-2 text-slate-800 hover:text-slate-600"
         >
           <span>View Testimonials</span>
           <FaArrowRight />
