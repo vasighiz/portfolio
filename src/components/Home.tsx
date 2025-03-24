@@ -96,12 +96,7 @@ const Home = () => {
       </div>
 
       {/* Featured Section */}
-      <motion.div
-        className="text-center mb-8"
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, delay: 0.4 }}
-      >
+      <div className="text-center mb-8">
         <Link 
           to="/testimonials" 
           className="inline-flex items-center space-x-2 bg-[#112240] text-[#FFD700] px-6 py-3 rounded-lg font-medium hover:bg-[#233554] hover:text-[#FFE55C] transition-colors duration-300 shadow-lg hover:shadow-xl border border-[#233554]"
@@ -109,7 +104,7 @@ const Home = () => {
           <span>View Testimonials</span>
           <FaArrowRight />
         </Link>
-      </motion.div>
+      </div>
     </motion.div>
   );
 };
