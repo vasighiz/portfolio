@@ -11,8 +11,8 @@ const MainLayout = () => {
     { path: '/resume', icon: <FaFileAlt />, label: 'Resume' },
     { path: '/skills', icon: <FaLightbulb />, label: 'Skills' },
     { path: '/gallery', icon: <FaImages />, label: 'Gallery' },
-    { path: '/testimonials', icon: <FaStar />, label: 'Testimonials' },
     { path: '/blog', icon: <FaBook />, label: 'Blog' },
+    { path: '/testimonials', icon: <FaStar />, label: 'Testimonials' },
     { path: '/contact', icon: <FaEnvelope />, label: 'Contact' },
   ];
 
