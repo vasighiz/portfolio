@@ -1,15 +1,17 @@
 // src/layouts/MainLayout.tsx
 import { Outlet, NavLink } from 'react-router-dom';
-import { FaUser, FaCode, FaFileAlt, FaEnvelope, FaLightbulb, FaImages } from 'react-icons/fa';
+import { FaUser, FaCode, FaFileAlt, FaEnvelope, FaLightbulb, FaImages, FaHome, FaStar } from 'react-icons/fa';
 import Header from '../components/Header';
 
 const MainLayout = () => {
   const navItems = [
-    { path: '/', icon: <FaUser />, label: 'About' },
+    { path: '/', icon: <FaHome />, label: 'Home' },
+    { path: '/about', icon: <FaUser />, label: 'About' },
     { path: '/projects', icon: <FaCode />, label: 'Projects' },
     { path: '/resume', icon: <FaFileAlt />, label: 'Resume' },
     { path: '/skills', icon: <FaLightbulb />, label: 'Skills' },
     { path: '/gallery', icon: <FaImages />, label: 'Gallery' },
+    { path: '/testimonials', icon: <FaStar />, label: 'Testimonials' },
     { path: '/contact', icon: <FaEnvelope />, label: 'Contact' },
   ];
 
