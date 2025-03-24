@@ -1,4 +1,3 @@
-import { motion } from 'framer-motion';
 import ProjectCard from './ProjectCard';
 
 const Projects = () => {
@@ -27,14 +26,8 @@ const Projects = () => {
   ];
 
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
-      transition={{ duration: 0.8 }}
-      className="bg-[#0A192F] rounded-xl p-6 min-h-full"
-    >
-      <h1 className="text-4xl font-bold text-[#CCD6F6] mb-8">Projects</h1>
+    <div className="max-w-4xl mx-auto">
+      <h2 className="text-3xl font-light mb-8 text-gray-900">Projects</h2>
       <div className="space-y-8">
         {projects.map((project, index) => (
           <ProjectCard
@@ -47,7 +40,7 @@ const Projects = () => {
           />
         ))}
       </div>
-    </motion.div>
+    </div>
   );
 };
 
