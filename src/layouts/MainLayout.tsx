@@ -55,6 +55,14 @@ const MainLayout = () => {
         <div className="flex-1 lg:ml-80">
           <div className="max-w-4xl mx-auto px-4 py-8 md:px-8">
             <div className="min-h-[calc(100vh-4rem)] bg-white/90 backdrop-blur-sm rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] p-8">
+              <div className="relative w-32 h-32 mx-auto mb-6">
+                <div className="absolute inset-0 bg-[#1A2B3C] rounded-full blur-xl opacity-20"></div>
+                <img
+                  src="/portfolio/profile.jpg"
+                  alt="Profile"
+                  className="relative w-full h-full rounded-full object-cover border-4 border-white shadow-[0_8px_30px_rgb(26,43,60,0.15)]"
+                />
+              </div>
               <Outlet />
             </div>
           </div>
