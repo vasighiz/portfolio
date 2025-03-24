@@ -11,17 +11,18 @@ const Header = () => {
               whileHover={{ scale: 1.05 }}
               transition={{ type: "spring", stiffness: 300 }}
             >
+              <div className="absolute inset-0 bg-[#1A2B3C] rounded-full blur-xl opacity-20"></div>
               <img
                 src="/portfolio/profile.jpg"
                 alt="Akram Vasighi"
-                className="rounded-full w-full h-full object-cover border-4 border-primary/20 shadow-xl"
+                className="relative w-full h-full rounded-full object-cover border-4 border-[#E2E8F0] shadow-[0_8px_30px_rgb(0,0,0,0.04)]"
               />
             </motion.div>
             <div>
-              <h1 className="text-2xl font-bold text-gray-900 mb-2">
+              <h1 className="text-2xl font-bold text-[#0B1B2D] mb-2">
                 Akram Vasighi
               </h1>
-              <p className="text-lg text-primary font-medium leading-relaxed">
+              <p className="text-lg text-[#334155] font-medium leading-relaxed">
                 PhD in Computer Science<br />
                 Machine Learning & AI
               </p>
