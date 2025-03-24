@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { useParams } from 'react-router-dom';
-import { FaCalendar, FaUser, FaTags, FaArrowLeft } from 'react-icons/fa';
+import { FaCalendar, FaUser, FaArrowLeft } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
 interface BlogPost {
