@@ -68,7 +68,7 @@ const galleryItems: GalleryItem[] = [
 const Gallery = () => {
   const [currentPage, setCurrentPage] = useState(0);
   const [selectedWork, setSelectedWork] = useState<GalleryItem | null>(null);
-  const itemsPerPage = 4;
+  const itemsPerPage = 6;
   const totalPages = Math.ceil(galleryItems.length / itemsPerPage);
 
   const nextPage = () => {

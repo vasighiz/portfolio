@@ -2,6 +2,9 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { FaArrowRight } from 'react-icons/fa';
 
+// You can switch between these two options by changing this value
+const BANNER_TYPE: 'profile' | 'custom' = 'profile';
+
 const Home = () => {
   return (
     <motion.div
@@ -13,7 +16,18 @@ const Home = () => {
       {/* Hero Banner */}
       <div className="relative h-[300px] -mx-8 -mt-8 mb-12">
         <div className="absolute inset-0 bg-gradient-to-r from-primary/90 to-primary-600/90 backdrop-blur">
-          <div className="absolute inset-0 bg-[url('/portfolio/banner.jpg')] mix-blend-overlay opacity-50"></div>
+          {BANNER_TYPE === 'custom' ? (
+            // Custom banner image option
+            <div className="absolute inset-0 bg-[url('/portfolio/banner.jpg')] mix-blend-overlay opacity-50 bg-cover bg-center"></div>
+          ) : (
+            // Profile photo option
+            <div className="absolute inset-0 flex items-center justify-center">
+              <div className="relative w-48 h-48">
+                <div className="absolute inset-0 bg-[url('/portfolio/profile.jpg')] rounded-full bg-cover bg-center border-4 border-white/20"></div>
+                <div className="absolute inset-0 bg-gradient-to-b from-transparent to-primary/90 rounded-full mix-blend-overlay"></div>
+              </div>
+            </div>
+          )}
         </div>
         <div className="relative h-full flex items-center justify-center text-center px-4">
           <div>
