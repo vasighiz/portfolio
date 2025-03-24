@@ -65,7 +65,7 @@ const Home = () => {
       {/* Quick Links Section */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
         <motion.div
-          className="bg-[#112240] rounded-xl shadow-md p-6 hover:shadow-lg transition-shadow duration-300"
+          className="bg-[#112240] rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300 border border-[#233554]"
           whileHover={{ scale: 1.02 }}
           transition={{ duration: 0.2 }}
         >
@@ -75,7 +75,7 @@ const Home = () => {
         </motion.div>
 
         <motion.div
-          className="bg-[#112240] rounded-xl shadow-md p-6 hover:shadow-lg transition-shadow duration-300"
+          className="bg-[#112240] rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300 border border-[#233554]"
           whileHover={{ scale: 1.02 }}
           transition={{ duration: 0.2 }}
         >
@@ -85,7 +85,7 @@ const Home = () => {
         </motion.div>
 
         <motion.div
-          className="bg-[#112240] rounded-xl shadow-md p-6 hover:shadow-lg transition-shadow duration-300"
+          className="bg-[#112240] rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300 border border-[#233554]"
           whileHover={{ scale: 1.02 }}
           transition={{ duration: 0.2 }}
         >
@@ -104,7 +104,7 @@ const Home = () => {
       >
         <Link 
           to="/testimonials" 
-          className="inline-flex items-center space-x-2 text-[#FFD700] hover:text-[#FFE55C]"
+          className="inline-flex items-center space-x-2 bg-[#112240] text-[#FFD700] px-6 py-3 rounded-lg font-medium hover:bg-[#233554] hover:text-[#FFE55C] transition-colors duration-300 shadow-lg hover:shadow-xl border border-[#233554]"
         >
           <span>View Testimonials</span>
           <FaArrowRight />
