@@ -36,7 +36,7 @@ const Home = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
             >
-              Welcome to My Portfolio
+              Welcome to the New Era of AI
             </motion.h1>
             <motion.p 
               className="text-lg md:text-xl text-[#8892B0] mb-6"
@@ -44,7 +44,7 @@ const Home = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
             >
-              Machine Learning & AI Researcher | PhD in Computer Science
+              Deep Learning & AI | Ph.D. in Computer Science
             </motion.p>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -72,7 +72,7 @@ const Home = () => {
           <FaGraduationCap className="text-3xl text-[#1A2B3C] mb-4" />
           <h3 className="text-xl font-semibold text-[#0B1B2D] mb-3">Education</h3>
           <p className="text-[#334155]">PhD in Computer Science</p>
-          <p className="text-[#334155] text-sm">2018 - 2022</p>
+          <p className="text-[#334155] text-sm">2020 - 2024</p>
         </motion.div>
 
         <motion.div 
@@ -82,7 +82,7 @@ const Home = () => {
           <FaBriefcase className="text-3xl text-[#1A2B3C] mb-4" />
           <h3 className="text-xl font-semibold text-[#0B1B2D] mb-3">Experience</h3>
           <p className="text-[#334155]">Research Scientist</p>
-          <p className="text-[#334155] text-sm">2022 - Present</p>
+          <p className="text-[#334155] text-sm">2014 - Present</p>
         </motion.div>
 
         <motion.div 
@@ -91,8 +91,8 @@ const Home = () => {
         >
           <FaLightbulb className="text-3xl text-[#1A2B3C] mb-4" />
           <h3 className="text-xl font-semibold text-[#0B1B2D] mb-3">Expertise</h3>
-          <p className="text-[#334155]">Machine Learning & AI</p>
-          <p className="text-[#334155] text-sm">Deep Learning, Bioinformatics</p>
+          <p className="text-[#334155]">Deep Learning & AI</p>
+          <p className="text-[#334155] text-sm">AI Agents</p>
         </motion.div>
       </div>
 
