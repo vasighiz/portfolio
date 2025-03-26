@@ -36,7 +36,7 @@ const Home = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
             >
-              Welcome to the new era of Artificial Intelligence
+              Welcome to the new era of AI
             </motion.h1>
             <motion.p 
               className="text-lg md:text-xl text-[#8892B0] mb-6"
@@ -44,7 +44,7 @@ const Home = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
             >
-              Transform your business with AI & Transformer solutions and Build your Tomorrow Today!
+              Transform your business with AI and Build your Tomorrow Today!
             </motion.p>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
