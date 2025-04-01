@@ -4,19 +4,19 @@ const Skills = () => {
   const skills = [
     {
       category: 'Machine Learning Frameworks & AI',
-      items: ['Python, R, Pytorch, Pandas, NumPy, Matplotlib, Scikit-learn, Pytest, Streamlit, LLMs (GPT), Prompt Engineering, Automation, Testing & CI/CD, RAG, AI Agents, LangChain']
+      items: ['Python', 'R', 'Pytorch', 'Pandas', 'NumPy', 'Matplotlib', 'Scikit-learn', 'Pytest', 'Streamlit', 'LLMs (GPT)', 'Prompt Engineering', 'Automation', 'Testing & CI/CD', 'RAG', 'AI Agents', 'LangChain']
     },
     {
       category: 'Tools & Platforms',
-      items: ['Docker & Containerization, AWS, Git, HPC, Bash/Shell Scripting, Data Pipeline & ETL, SQL, LaTeX']
+      items: ['Docker & Containerization', 'AWS', 'Git', 'HPC', 'Bash/Shell Scripting', 'Data Pipeline & ETL', 'SQL', 'LaTeX']
     },
     {
       category: 'Bioinformatics Tools',
-      items: ['Scanpy, Seurat, Squidpy, DESeq2, SAMtools, BEDTools, IGV, GSEA, Cytoscape, STAR, MaGeCK, CasoFFinder,, Crisprscore']
+      items: ['Scanpy', 'Seurat', 'Squidpy', 'DESeq2', 'SAMtools', 'BEDTools', 'IGV', 'GSEA', 'Cytoscape', 'STAR', 'MaGeCK', 'CasoFFinder', 'Crisprscore']
     },
     {
       category: 'Leadership & Product Thinking',
-      items: ['Modularization & Scalable Architecture, Model Optimization, UI/UX Flow, Cross-functional Team Collaboration']
+      items: ['Modularization & Scalable Architecture', 'Model Optimization', 'UI/UX Flow', 'Cross-functional Team Collaboration']
     }
   ];
 
