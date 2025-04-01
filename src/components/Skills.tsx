@@ -3,20 +3,20 @@ import { motion } from 'framer-motion'
 const Skills = () => {
   const skills = [
     {
-      category: 'Machine Learning',
-      items: ['Deep Learning', 'Neural Networks', 'Computer Vision', 'Natural Language Processing']
+      category: 'Machine Learning Frameworks & AI',
+      items: ['Python, R, Pytorch, Pandas, NumPy, Matplotlib, Scikit-learn, Pytest, Streamlit, LLMs (GPT), Prompt Engineering, Automation, Testing & CI/CD, RAG, AI Agents, LangChain']
     },
     {
-      category: 'Programming',
-      items: ['Python', 'TensorFlow', 'PyTorch', 'R', 'MATLAB']
+      category: 'Tools & Platforms',
+      items: ['Docker & Containerization, AWS, Git, HPC, Bash/Shell Scripting, Data Pipeline & ETL, SQL, LaTeX']
     },
     {
-      category: 'Data Analysis',
-      items: ['Statistical Analysis', 'Data Visualization', 'Feature Engineering', 'Model Evaluation']
+      category: 'Bioinformatics Tools',
+      items: ['Scanpy, Seurat, Squidpy, DESeq2, SAMtools, BEDTools, IGV, GSEA, Cytoscape, STAR, MaGeCK, CasoFFinder,, Crisprscore']
     },
     {
-      category: 'Tools & Technologies',
-      items: ['Git', 'Docker', 'AWS', 'Linux', 'Jupyter Notebooks']
+      category: 'Leadership & Product Thinking',
+      items: ['Modularization & Scalable Architecture, Model Optimization, UI/UX Flow, Cross-functional Team Collaboration']
     }
   ];
 
