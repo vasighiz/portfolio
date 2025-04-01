@@ -21,6 +21,7 @@ const Header = () => {
             <div>
               <h1 className="text-2xl font-bold text-[#0B1B2D] mb-2">
                 Akram Vasighi
+                @ Celligent-AI
               </h1>
               <p className="text-lg text-[#334155] font-medium leading-relaxed">
                 PhD in Computer Science<br />
