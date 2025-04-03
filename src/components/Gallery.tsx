@@ -70,6 +70,14 @@ const galleryItems: GalleryItem[] = [
     technologies: ["Python", "TensorFlow", "OpenCV"],
     image: "/portfolio/work7.jpg",
   }
+  {
+    id: 8,
+    title: "Project 8",
+    description: "Brief description of project 8",
+    detailedDescription: "Detailed explanation of project 8, including its goals, implementation, and outcomes.",
+    technologies: ["Python", "TensorFlow", "OpenCV"],
+    image: "/portfolio/work8.jpg",
+  }
 ];
 
 const Gallery = () => {
