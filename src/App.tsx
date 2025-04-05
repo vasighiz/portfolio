@@ -6,7 +6,6 @@ import Projects from './components/Projects';
 import Resume from './components/Resume';
 import Skills from './components/Skills';
 import Gallery from './components/Gallery';
-import Testimonials from './components/Testimonials';
 import Contact from './components/Contact';
 import Blog from './components/Blog';
 import BlogPost from './components/BlogPost';
@@ -24,7 +23,6 @@ const App = () => {
             <Route path="resume" element={<Resume />} />
             <Route path="skills" element={<Skills />} />
             <Route path="gallery" element={<Gallery />} />
-            <Route path="testimonials" element={<Testimonials />} />
             <Route path="contact" element={<Contact />} />
             <Route path="blog" element={<Blog />} />
             <Route path="blog/:slug" element={<BlogPost />} />
