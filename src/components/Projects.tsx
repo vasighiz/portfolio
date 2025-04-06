@@ -5,26 +5,26 @@ const Projects = () => {
   const projects = [
     {
       title: 'Deep Learning for Healthcare',
-      description: 'Research project focusing on applying deep learning techniques to medical imaging analysis.',
-      technologies: ['Python', 'TensorFlow', 'PyTorch', 'Medical Imaging'],
+      description: 'Innovative project focusing on automating genomic data analysis, powered by LLMs and AI Agents.',
+      technologies: ["Python ", "GPT", "Streamlit", "AWS", "AI Agents & Automation", "MCP"],
       image: '/portfolio/project1.jpg',
-      githubUrl: 'https://github.com/yourusername/healthcare-dl',
+      githubUrl: 'https://github.com/vasighiz/scAgentic',
       liveUrl: 'https://healthcare-dl-demo.com'
     },
     {
-      title: 'AI-Powered Bioinformatics',
-      description: 'Development of machine learning models for genomic data analysis and prediction.',
-      technologies: ['Python', 'Scikit-learn', 'Bioinformatics', 'Data Analysis'],
-      image: '/portfolio/project2.jpg',
-      githubUrl: 'https://github.com/yourusername/bioinformatics-ai',
+      title: 'SEGCECO: Subgraph Embedding of Gene expression matrix for prediction of CEll-cell COmmunication',
+      description: 'Research project focusing on development of machine learning models for cellular interacction prediction.',
+      technologies: ['Python', 'Scikit-learn', 'TensorFlow', 'numpy', 'GPU clusters', 'matplotlib', 'seaborn'],
+      image: '/portfolio/public/segceco.jpg',
+      githubUrl: 'https://github.com/vasighiz/SEGCECO',
       liveUrl: 'https://bioinformatics-ai-demo.com'
     },
     {
-      title: 'Neural Network Optimization',
-      description: 'Research on optimizing neural network architectures for improved performance.',
-      technologies: ['Python', 'Deep Learning', 'Optimization', 'Research'],
+      title: 'TDMnewspapers-NMF',
+      description: 'Using OCR Text Mining and NMF Topic Modeling to Analyze Historical Newspaper.',
+      technologies: ['Python', 'NLP', 'Optimization', 'HPC'],
       image: '/portfolio/project3.jpg',
-      githubUrl: 'https://github.com/yourusername/nn-optimization',
+      githubUrl: 'https://github.com/vasighiz/TDMnewspapers-NMF',
       liveUrl: 'https://nn-optimization-demo.com'
     }
   ];
@@ -38,9 +38,9 @@ const Projects = () => {
       className="space-y-8"
     >
       <div>
-        <h1 className="text-4xl font-bold text-[#0B1B2D] mb-4">Research Projects</h1>
+        <h1 className="text-4xl font-bold text-[#0B1B2D] mb-4">Projects</h1>
         <p className="text-[#334155] leading-relaxed">
-          Explore my research contributions in Machine Learning and Artificial Intelligence.
+          Explore my contributions in Machine Learning and Artificial Intelligence.
         </p>
       </div>
 
