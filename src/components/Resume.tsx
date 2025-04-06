@@ -4,7 +4,7 @@ const Resume = () => {
   const experiences = [
     {
       title: "Senior ML Engineer, App Developer, & Technical Lead",
-      company: "Tech Company Inc.",
+      company: "Freelance.",
       period: "2022 - Present",
       description: "Led the design and development of an LLM-based tool for automated genomic data analysis to enable hypothesis generation for users without programming expertise.",
       technologies: ["Python ", "GPT", "Streamlit", "AWS", "AI Agents & Automation", "MCP"]
@@ -50,7 +50,7 @@ const Resume = () => {
 
         <div className="space-y-12">
           <motion.div variants={itemVariants}>
-            <h3 className="text-2xl font-light mb-6">Experience</h3>
+            <h3 className="text-2xl font-light mb-6">The Most Recent Experience</h3>
             <div className="space-y-8">
               {experiences.map((exp, index) => (
                 <motion.div 
