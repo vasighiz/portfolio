@@ -14,7 +14,7 @@ const About = () => {
       
       <div className="prose prose-lg max-w-none">
         <p className="text-[#334155] leading-relaxed mb-6">
-          I am a passionate Machine Learning and AI researcher with a PhD in Computer Science. 
+          I am a passionate Machine Learning and AI researcher. 
           My research focuses on developing innovative solutions in deep learning and artificial intelligence, 
           with a particular interest in multidisciplinary applications.
         </p>

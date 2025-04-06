@@ -44,7 +44,7 @@ const Home = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
             >
-              Transform your Business with AI and Build your Tomorrow Today!
+              Transform your Ideas with AI and Build your Tomorrow Today!
             </motion.p>
             <motion.div
               initial={{ opacity: 0, y: 20 }}

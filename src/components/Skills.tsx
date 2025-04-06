@@ -4,11 +4,11 @@ const Skills = () => {
   const skills = [
     {
       category: 'Machine Learning Frameworks & AI',
-      items: ['Python', 'R', 'Pytorch', 'Pandas', 'NumPy', 'Matplotlib', 'Scikit-learn', 'Pytest', 'Streamlit', 'LLMs (GPT)', 'Prompt Engineering', 'Automation', 'Testing & CI/CD', 'RAG', 'AI Agents', 'LangChain']
+      items: ['Python', 'R', 'Pytorch', 'Keras', 'TensorFlow', 'Streamlit', 'LLMs (GPT)', 'CI/CD', 'RAG', 'AI Agents & Automation', 'LangChain']
     },
     {
       category: 'Tools & Platforms',
-      items: ['Docker & Containerization', 'AWS', 'Git', 'HPC', 'Bash/Shell Scripting', 'Data Pipeline & ETL', 'SQL', 'LaTeX']
+      items: ['Docker & Containerization', 'AWS', 'Git', 'HPC', 'MCP', 'Bash/Shell Scripting', 'Data Pipeline & ETL', 'SQL', 'LaTeX']
     },
     {
       category: 'Bioinformatics Tools',
@@ -16,7 +16,7 @@ const Skills = () => {
     },
     {
       category: 'Leadership & Product Thinking',
-      items: ['Modularization & Scalable Architecture', 'Model Optimization', 'UI/UX Flow', 'Cross-functional Team Collaboration']
+      items: ['Modularization & Scalable Architecture', 'Model Optimization & Fine-tunning', 'UI/UX Flow', 'Cross-functional Team Collaboration']
     }
   ];
 
@@ -31,7 +31,7 @@ const Skills = () => {
       <div>
         <h1 className="text-4xl font-bold text-[#0B1B2D] mb-4">Skills & Expertise</h1>
         <p className="text-[#334155] leading-relaxed">
-          A comprehensive overview of my technical skills and areas of expertise in Machine Learning and AI.
+          
         </p>
       </div>
 
