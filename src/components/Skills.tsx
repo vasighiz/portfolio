@@ -4,7 +4,7 @@ const Skills = () => {
   const skills = [
     {
       category: 'Machine Learning Frameworks & AI',
-      items: ['Python', 'R', 'Pytorch', 'Keras', 'TensorFlow', 'Streamlit', 'LLMs (GPT)', 'CI/CD', 'RAG', 'AI Agents & Automation', 'LangChain']
+      items: ['Python', 'R', 'Pytorch', 'Keras', 'TensorFlow', 'Streamlit', 'LLMs (GPT)', 'CI/CD', 'RAG', 'AI Agents & Automation']
     },
     {
       category: 'Tools & Platforms',

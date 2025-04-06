@@ -3,27 +3,27 @@ import { motion } from 'framer-motion'
 const Resume = () => {
   const experiences = [
     {
-      title: "Senior Frontend Developer",
+      title: "Senior ML Engineer, App Developer, & Technical Lead",
       company: "Tech Company Inc.",
-      period: "2021 - Present",
-      description: "Led frontend development for multiple projects, implemented new features, and mentored junior developers.",
-      technologies: ["React", "TypeScript", "Next.js", "Tailwind CSS"]
+      period: "2022 - Present",
+      description: "Led the design and development of an LLM-based tool for automated genomic data analysis to enable hypothesis generation for users without programming expertise.",
+      technologies: ["Python ", "GPT", "Streamlit", "AWS", "AI Agents & Automation", "MCP"]
     },
     {
-      title: "Frontend Developer",
-      company: "Digital Agency Ltd.",
-      period: "2019 - 2021",
-      description: "Developed responsive web applications and collaborated with design team to implement pixel-perfect interfaces.",
-      technologies: ["React", "JavaScript", "SCSS", "Redux"]
+      title: "Post-Doctoral Fellow, Data analyst",
+      company: "University of Windsor, School of Computer Science & Biomedical Science",
+      period: "07/2024 - 03/2025",
+      description: "Collaborated closely with researchers to translate scientific goals into efficient, scalable computational solutions, accelerating research through automated data processing and visualization.",
+      technologies: ["Python", "R", "HPC and GPU Clusters","Docker & Containerization ", "Cross-functional Team Collaboration"]
     }
   ]
 
   const education = [
     {
-      degree: "Bachelor of Computer Science",
-      institution: "University Name",
-      period: "2015 - 2019",
-      description: "Focus on web technologies and software engineering principles."
+      degree: "Ph.D. in Computer Science",
+      institution: "University of Windsor, Canada",
+      period: "2020 - 2024",
+      description: "Focus on machine learning and deep learning applications in large-scale data analysis."
     }
   ]
 
