@@ -181,7 +181,7 @@ You've just fine-tuned a powerful LLM to **understand your domain**. From here, 
     date: "2024-03-20",
     author: "Akram Vasighi",
     tags: ["AI", "Machine Learning", "LLM", "Hugging Face", "Tutorial"],
-    image: "/portfolio/blog/huggingface-transformers.jpg",
+    image: "/portfolio/blog/finetune.png",
     slug: "fine-tuning-llm-huggingface-transformers"
   }
 ];
