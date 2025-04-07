@@ -17,6 +17,17 @@ interface BlogPost {
 const blogPosts: BlogPost[] = [
   {
     id: 1,
+    title: "The Future of AI in Healthcare: A New Era of Precision and Support",
+    excerpt: "Exploring how artificial intelligence is transforming the healthcare industry.",
+    content: "Artificial intelligence is rapidly transforming healthcare, moving far beyond just automating tasks...",
+    date: "2024-03-25",
+    author: "Akram Vasighi",
+    tags: ["AI", "Healthcare", "Machine Learning", "Future Tech"],
+    image: "/portfolio/blog/ai-healthcare.jpg",
+    slug: "future-of-ai-in-healthcare"
+  },
+  {
+    id: 2,
     title: "Fine-Tuning Large Language Models",
     excerpt: "A comprehensive guide to fine-tuning LLMs for domain-specific applications.",
     content: "Fine-Tuning Large Language Models: Custom Intelligence for Real-World Impact...",
@@ -27,7 +38,7 @@ const blogPosts: BlogPost[] = [
     slug: "fine-tuning-large-language-models"
   },
   {
-    id: 2,
+    id: 3,
     title: "Fine-tuning your first LLM using Hugging Face Transformers",
     excerpt: "A step-by-step tutorial on fine-tuning LLMs with Hugging Face Transformers.",
     content: "Fine-tuning a large language model might sound intimidating—but with the right tools, it's surprisingly accessible...",

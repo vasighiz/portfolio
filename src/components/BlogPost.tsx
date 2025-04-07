@@ -17,6 +17,29 @@ interface BlogPost {
 const blogPosts: BlogPost[] = [
   {
     id: 1,
+    title: "The Future of AI in Healthcare: A New Era of Precision and Support",
+    content: `The Future of AI in Healthcare: A New Era of Precision and Support
+
+Artificial intelligence is rapidly transforming healthcare, moving far beyond just automating tasks. As the technology matures, its potential to reshape clinical workflows and deepen our understanding of human biology is becoming undeniable. Two major frontiers stand out: clinical assistants and genomics.
+
+Clinical AI Assistants: A Partner in Care
+Imagine a digital assistant that helps doctors not just with scheduling or note-taking, but with real-time decision-making. AI is evolving into exactly that. From triaging patients in emergency rooms to flagging subtle patterns in radiology scans, intelligent systems are becoming essential second eyes for physicians. The future of these assistants lies in their ability to learn from each interaction, personalize suggestions based on patient history, and integrate with wearable data to offer continuous care—not just reactive treatment.
+
+AI in Genomics: Unlocking the Blueprint of Life
+AI is also revolutionizing genomics, where it's helping scientists decode vast amounts of genetic information faster and more accurately than ever before. With the help of machine learning, researchers can now identify disease-linked genetic variants, predict gene function, and even tailor treatments to individual genetic profiles. This has huge implications for personalized medicine, cancer therapy, and rare disease diagnosis. As large-scale biobanks and multi-omics data become more accessible, AI will be critical in turning raw data into actionable insights.
+
+What's Next?
+The future of AI in healthcare isn't about replacing professionals—it's about amplifying human expertise, reducing errors, and uncovering patterns too complex for the human eye alone. As ethical frameworks and clinical validation improve, we're on the brink of a new era where AI-driven tools don't just assist—they elevate the entire healthcare system.
+
+Healthcare's next breakthroughs might not come from a lab, but from lines of intelligent code. And the future? It's already being written.`,
+    date: "2024-03-25",
+    author: "Akram Vasighi",
+    tags: ["AI", "Healthcare", "Machine Learning", "Future Tech"],
+    image: "/portfolio/blog/ai-healthcare.jpg",
+    slug: "future-of-ai-in-healthcare"
+  },
+  {
+    id: 2,
     title: "Fine-Tuning Large Language Models",
     content: `Fine-Tuning Large Language Models: Custom Intelligence for Real-World Impact
 As artificial intelligence moves from research labs into real-world products, Large Language Models (LLMs) like GPT, BERT, and their derivatives are becoming central to innovation across industries. But while these models are powerful out of the box, their real strength lies in fine-tuning—adapting them to specific tasks, domains, and use cases.
@@ -54,7 +77,7 @@ Adapt to specific team needs—whether it's research, software, or hardware`,
     slug: "fine-tuning-large-language-models"
   },
   {
-    id: 2,
+    id: 3,
     title: "Fine-tuning your first LLM using Hugging Face Transformers",
     content: `Tutorial: Fine-Tune Your First Large Language Model (LLM) with Hugging Face Transformers
 
@@ -177,9 +200,9 @@ You've just fine-tuned a powerful LLM to **understand your domain**. From here, 
 
 - Fine-tune for other tasks: QA, summarization, translation, etc.
 - Use \`Trainer\` callbacks for logging to WandB or TensorBoard
-- Experiment with newer architectures like RoBERTa or Falcon`,
+- Experiment with newer architectures like RoBERTa or Falcon.`,
     date: "2024-03-20",
-    author: "Akram Vasighi",
+    author: "Akram Vasighi & ChatGPT!",
     tags: ["AI", "Machine Learning", "LLM", "Hugging Face", "Tutorial"],
     image: "/portfolio/blog/finetune.png",
     slug: "fine-tuning-llm-huggingface-transformers"
