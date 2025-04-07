@@ -17,36 +17,60 @@ interface BlogPost {
 const blogPosts: BlogPost[] = [
   {
     id: 1,
-    title: "Understanding Deep Learning Fundamentals",
+    title: "Fine-Tuning Large Language Models",
     content: `
-      Deep learning is a subset of machine learning that uses neural networks with multiple layers (deep neural networks) to progressively extract higher-level features from raw input.
+Fine-Tuning Large Language Models: Custom Intelligence for Real-World Impact
+As artificial intelligence moves from research labs into real-world products, Large Language Models (LLMs) like GPT, BERT, and their derivatives are becoming central to innovation across industries. But while these models are powerful out of the box, their real strength lies in fine-tuning—adapting them to specific tasks, domains, and use cases.
 
-      ## What is Deep Learning?
+At companies like AMD, where cutting-edge hardware and intelligent software collide, fine-tuning LLMs opens the door to smarter tools, faster development, and deeper product insights.
 
-      Deep learning is a type of machine learning that teaches computers to do what comes naturally to humans: learn by example. Deep learning is a key technology behind driverless cars, enabling them to recognize a stop sign, or to distinguish a pedestrian from a lamppost.
+What is Fine-Tuning in LLMs?
+Fine-tuning is the process of taking a pre-trained model and training it further on a specific dataset. Think of it as customizing a general-purpose model to become a domain expert—whether that domain is semiconductor manufacturing, technical documentation, or customer support.
 
-      ![Deep Learning Concept](/portfolio/blog/deep-learning-concept.jpg)
+For example, you might start with a general model like GPT-3, then fine-tune it on engineering logs or product manuals to create a specialized assistant that understands your internal data and workflows.
 
-      ## Key Components
+Why It Matters
+🧠 Domain Expertise: Out-of-the-box LLMs might not understand industry-specific jargon or context. Fine-tuning helps models speak your language.
 
-      1. Neural Networks
-      2. Activation Functions
-      3. Backpropagation
-      4. Optimization Algorithms
+🛠 Task Specialization: You can teach a model to perform specific tasks like summarizing system diagnostics, generating code, or prioritizing bug reports.
 
-      ## Applications
+⚙️ Performance Boost: Fine-tuned models typically achieve higher accuracy and relevance compared to generic ones—especially in technical or niche settings.
 
-      Deep learning has been successfully applied to various domains:
+🔒 Data Privacy: By using internal datasets, you can keep sensitive information in-house and still benefit from cutting-edge AI.
 
-      - Computer Vision
-      - Natural Language Processing
-      - Speech Recognition
-      - Autonomous Systems
+Fine-Tuning in Practice at AMD
+At AMD, fine-tuning is a core part of the AI engineering pipeline. From optimizing infrastructure performance to enabling intelligent automation across the product lifecycle, fine-tuned LLMs:
 
-      ![AI Applications](/portfolio/blog/ai-applications.jpg)
+Interpret millions of logs and system records
+
+Automate technical documentation generation
+
+Assist engineers with debugging, predictions, and code completion
+
+Adapt to specific team needs—whether it’s research, software, or hardware
+
+By integrating LLMs with AMD’s distributed systems and massive datasets, teams gain AI co-pilots tailored to their exact environment.
+
+How to Get Started
+If you're aiming to join the frontier of AI engineering:
+
+💻 Learn model architectures like GPT, BERT, T5
+
+📊 Explore frameworks like HuggingFace Transformers or OpenLLM
+
+🔁 Practice fine-tuning on domain-specific datasets
+
+🚀 Optimize performance with techniques like LoRA, quantization, or distillation
+
+☁️ Deploy on scalable platforms (GCP, AWS, Azure—or even custom AMD-powered clusters)
+
+Final Thoughts
+Fine-tuning LLMs isn’t just a technical upgrade—it’s a strategic advantage. For companies like AMD building intelligent, high-performance systems, it enables AI to speak the language of engineering, act as a true assistant, and fuel a new generation of smart solutions.
+
+And for developers and researchers? It’s your invitation to build something that not only understands the world—but understands your world.
     `,
     date: "March 15, 2024",
-    author: "Akram Vasighi",
+    author: "Akram Vasighi & chatGPT!",
     tags: ["Deep Learning", "AI", "Machine Learning"],
     image: "/portfolio/blog/deep-learning.jpg",
     slug: "understanding-deep-learning-fundamentals"
@@ -55,39 +79,24 @@ const blogPosts: BlogPost[] = [
     id: 2,
     title: "The Future of AI in Healthcare",
     content: `
-      Artificial intelligence is revolutionizing healthcare in ways we never imagined possible. From diagnosis to treatment planning, AI is becoming an integral part of modern medicine.
+      The Future of AI in Healthcare: A New Era of Precision and Support
 
-      ## Current Applications
+Artificial intelligence is rapidly transforming healthcare, moving far beyond just automating tasks. As the technology matures, its potential to reshape clinical workflows and deepen our understanding of human biology is becoming undeniable. Two major frontiers stand out: clinical assistants and genomics.
 
-      AI is already making significant contributions to healthcare:
+Clinical AI Assistants: A Partner in Care
+Imagine a digital assistant that helps doctors not just with scheduling or note-taking, but with real-time decision-making. AI is evolving into exactly that. From triaging patients in emergency rooms to flagging subtle patterns in radiology scans, intelligent systems are becoming essential second eyes for physicians. The future of these assistants lies in their ability to learn from each interaction, personalize suggestions based on patient history, and integrate with wearable data to offer continuous care—not just reactive treatment.
 
-      - Medical Imaging Analysis
-      - Drug Discovery
-      - Patient Care Optimization
-      - Predictive Analytics
+AI in Genomics: Unlocking the Blueprint of Life
+AI is also revolutionizing genomics, where it’s helping scientists decode vast amounts of genetic information faster and more accurately than ever before. With the help of machine learning, researchers can now identify disease-linked genetic variants, predict gene function, and even tailor treatments to individual genetic profiles. This has huge implications for personalized medicine, cancer therapy, and rare disease diagnosis. As large-scale biobanks and multi-omics data become more accessible, AI will be critical in turning raw data into actionable insights.
 
-      ![AI in Healthcare](/portfolio/blog/ai-healthcare-applications.jpg)
+What’s Next?
+The future of AI in healthcare isn’t about replacing professionals—it’s about amplifying human expertise, reducing errors, and uncovering patterns too complex for the human eye alone. As ethical frameworks and clinical validation improve, we’re on the brink of a new era where AI-driven tools don’t just assist—they elevate the entire healthcare system.
 
-      ## Future Prospects
+Healthcare’s next breakthroughs might not come from a lab, but from lines of intelligent code. And the future? It's already being written.
 
-      The future of AI in healthcare looks promising, with potential applications in:
-
-      - Personalized Medicine
-      - Early Disease Detection
-      - Treatment Planning
-      - Healthcare Resource Management
-
-      ## Challenges and Considerations
-
-      While AI offers tremendous potential, there are important considerations:
-
-      - Data Privacy
-      - Ethical Concerns
-      - Integration with Existing Systems
-      - Training Healthcare Professionals
     `,
     date: "March 10, 2024",
-    author: "Akram Vasighi",
+    author: "Akram Vasighi & chatGPT!",
     tags: ["AI", "Healthcare", "Technology"],
     image: "/portfolio/blog/ai-healthcare.jpg",
     slug: "future-of-ai-in-healthcare"
