@@ -6,14 +6,14 @@ const Resume = () => {
       title: "Senior ML Engineer, App Developer, & Technical Lead",
       company: "Freelance.",
       period: "2022 - Present",
-      description: "Led the design and development of an LLM-based tool for automated genomic data analysis to enable hypothesis generation for users without programming expertise.",
+      description: "Led the design and development of an LLM-based tool for automated genomic data analysis to enable inference and hypothesis generation for users without programming expertise.",
       technologies: ["Python ", "GPT", "Streamlit", "AWS", "AI Agents & Automation", "MCP"]
     },
     {
       title: "Post-Doctoral Fellow, Data analyst",
       company: "University of Windsor, School of Computer Science & Biomedical Science",
       period: "07/2024 - 03/2025",
-      description: "Collaborated closely with researchers to translate scientific goals into efficient, scalable computational solutions, accelerating research through automated data processing and visualization.",
+      description: "Collaborated closely with researchers to translate scientific goals into efficient, scalable computational solutions, accelerating research through data processing and visualization.",
       technologies: ["Python", "R", "HPC and GPU Clusters","Docker & Containerization ", "Cross-functional Team Collaboration"]
     }
   ]
