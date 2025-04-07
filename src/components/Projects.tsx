@@ -4,7 +4,7 @@ import ProjectCard from './ProjectCard';
 const Projects = () => {
   const projects = [
     {
-      title: 'Deep Learning for Healthcare',
+      title: 'scAgentic: AI Agents for Automated Genomic Data Analysis',
       description: 'Innovative project focusing on automating genomic data analysis, powered by LLMs and AI Agents.',
       technologies: ["Python ", "GPT", "Streamlit", "AWS", "AI Agents & Automation", "MCP"],
       image: '/portfolio/project1.jpg',
@@ -15,7 +15,7 @@ const Projects = () => {
       title: 'SEGCECO: Subgraph Embedding of Gene expression matrix for prediction of CEll-cell COmmunication',
       description: 'Research project focusing on development of machine learning models for cellular interacction prediction.',
       technologies: ['Python', 'Scikit-learn', 'TensorFlow', 'numpy', 'GPU clusters', 'matplotlib', 'seaborn'],
-      image: '/portfolio/public/segceco.jpg',
+      image: '/portfolio/segceco.jpg',
       githubUrl: 'https://github.com/vasighiz/SEGCECO',
       liveUrl: 'https://bioinformatics-ai-demo.com'
     },
