@@ -92,14 +92,14 @@ const Home = () => {
           <FaLightbulb className="text-3xl text-[#1A2B3C] mb-4" />
           <h3 className="text-xl font-semibold text-[#0B1B2D] mb-3">Expertise</h3>
           <p className="text-[#334155]">Deep Learning & AI</p>
-          <p className="text-[#334155] text-sm">AI Agents</p>
+          <p className="text-[#334155] text-sm">LLMs, Graph Neural Networks, and Large-scale Data Processing</p>
         </motion.div>
       </div>
 
       {/* Social Links */}
       <div className="flex justify-center gap-4 mt-6">
         <a
-          href="https://github.com/yourusername"
+          href="https://github.com/vasighiz"
           target="_blank"
           rel="noopener noreferrer"
           className="bg-white/90 backdrop-blur-sm rounded-lg p-3 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-[#E2E8F0] hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-all duration-300 text-[#1A2B3C] hover:text-[#2C3E50]"
@@ -107,7 +107,7 @@ const Home = () => {
           <FaGithub className="text-2xl" />
         </a>
         <a
-          href="https://linkedin.com/in/yourusername"
+          href="https://www.linkedin.com/in/vasighi/"
           target="_blank"
           rel="noopener noreferrer"
           className="bg-white/90 backdrop-blur-sm rounded-lg p-3 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-[#E2E8F0] hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-all duration-300 text-[#1A2B3C] hover:text-[#2C3E50]"
