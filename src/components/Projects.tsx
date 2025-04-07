@@ -6,7 +6,7 @@ const Projects = () => {
     {
       title: 'scAgentic: AI Agents for Automated Genomic Data Analysis',
       description: 'Innovative project focusing on automating genomic data analysis, powered by LLMs and AI Agents.',
-      technologies: ["Python ", "GPT", "Streamlit", "AWS", "AI Agents & Automation", "MCP"],
+      technologies: ["Python ", "GPT", "Image Processing", "AWS", "AI Agents & Automation", "MCP"],
       image: '/portfolio/project1.jpg',
       githubUrl: 'https://github.com/vasighiz/scAgentic',
       liveUrl: 'https://healthcare-dl-demo.com'
