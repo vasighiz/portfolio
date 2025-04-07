@@ -14,7 +14,7 @@ const Projects = () => {
     {
       title: 'SEGCECO: Subgraph Embedding of Gene expression matrix for prediction of CEll-cell COmmunication',
       description: 'Research project focusing on development of machine learning models for cellular interacction prediction.',
-      technologies: ['Python', 'Scikit-learn', 'TensorFlow', 'numpy', 'GPU clusters', 'matplotlib', 'seaborn'],
+      technologies: ['Python', 'Grapg Neural Networks', 'TensorFlow', 'PyTorch', 'GPU clusters', 'Large-scale Data Processing'],
       image: '/portfolio/segceco.jpg',
       githubUrl: 'https://github.com/vasighiz/SEGCECO',
       liveUrl: 'https://bioinformatics-ai-demo.com'
