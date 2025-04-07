@@ -32,7 +32,7 @@ What's Next?
 The future of AI in healthcare isn't about replacing professionals—it's about amplifying human expertise, reducing errors, and uncovering patterns too complex for the human eye alone. As ethical frameworks and clinical validation improve, we're on the brink of a new era where AI-driven tools don't just assist—they elevate the entire healthcare system.
 
 Healthcare's next breakthroughs might not come from a lab, but from lines of intelligent code. And the future? It's already being written.`,
-    date: "2024-03-25",
+    date: "2024-03-01",
     author: "Akram Vasighi",
     tags: ["AI", "Healthcare", "Machine Learning", "Future Tech"],
     image: "/portfolio/blog/ai-healthcare.jpg",
@@ -52,13 +52,13 @@ Fine-tuning is the process of taking a pre-trained model and training it further
 For example, you might start with a general model like GPT-3, then fine-tune it on engineering logs or product manuals to create a specialized assistant that understands your internal data and workflows.
 
 Why It Matters
-🧠 Domain Expertise: Out-of-the-box LLMs might not understand industry-specific jargon or context. Fine-tuning helps models speak your language.
+Domain Expertise: Out-of-the-box LLMs might not understand industry-specific jargon or context. Fine-tuning helps models speak your language.
 
-🛠 Task Specialization: You can teach a model to perform specific tasks like summarizing system diagnostics, generating code, or prioritizing bug reports.
+Task Specialization: You can teach a model to perform specific tasks like summarizing system diagnostics, generating code, or prioritizing bug reports.
 
-⚙️ Performance Boost: Fine-tuned models typically achieve higher accuracy and relevance compared to generic ones—especially in technical or niche settings.
+Performance Boost: Fine-tuned models typically achieve higher accuracy and relevance compared to generic ones—especially in technical or niche settings.
 
-🔒 Data Privacy: By using internal datasets, you can keep sensitive information in-house and still benefit from cutting-edge AI.
+Data Privacy: By using internal datasets, you can keep sensitive information in-house and still benefit from cutting-edge AI.
 
 Fine-Tuning in Practice
 Fine-tuning is a core part of the AI engineering pipeline. From optimizing infrastructure performance to enabling intelligent automation across the product lifecycle, fine-tuned LLMs:
@@ -85,65 +85,75 @@ Fine-tuning a large language model might sound intimidating—but with the right
 
 By the end, you'll have a model tailored to your specific domain—ready to improve everything from document understanding to chatbot performance.
 
-🔧 What You Need
+What You Need
 
-✅ Python (>=3.8)  
-✅ A GPU (recommended for speed)  
-✅ Libraries: \`transformers\`, \`datasets\`, \`evaluate\`, \`scikit-learn\`  
-✅ Your dataset (we'll use a simple text classification example)
+. Python (>=3.8)  
+. A GPU (recommended for speed)  
+. Libraries: \`transformers\`, \`datasets\`, \`evaluate\`, \`scikit-learn\`  
+. Your dataset (we'll use a simple text classification example)
 
-🧪 Step 1: Install Dependencies
+Step 1: Install Dependencies
 
-\`\`\`bash
+your code here:
+---
 pip install transformers datasets evaluate scikit-learn
-\`\`\`
+---
 
-📁 Step 2: Prepare Your Dataset
+Step 2: Prepare Your Dataset
 
 Let's say you have customer support data like this:
 
-\`\`\`csv
+your code here:
+---
 text,label
 "System crash when opening file", bug
+
 "Need help installing drivers", support
+
 "Performance issues after update", bug
+
 "How to request warranty?", support
-\`\`\`
+
+---
 
 We'll load this using Hugging Face Datasets:
 
-\`\`\`python
+your code here:
+---
 from datasets import load_dataset
 
 # You can load from a CSV, JSON, or even pandas DataFrame
 dataset = load_dataset("csv", data_files={"train": "your_data.csv"})
-\`\`\`
+---
 
-🤖 Step 3: Load a Pretrained Model & Tokenizer
+Step 3: Load a Pretrained Model & Tokenizer
 
 We'll use **DistilBERT** for classification:
 
-\`\`\`python
+your code here:
+---
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
 
 model_name = "distilbert-base-uncased"
 tokenizer = AutoTokenizer.from_pretrained(model_name)
 
 model = AutoModelForSequenceClassification.from_pretrained(model_name, num_labels=2)
-\`\`\`
+---
 
-✂️ Step 4: Tokenize the Dataset
+Step 4: Tokenize the Dataset
 
-\`\`\`python
+your code here:
+---
 def tokenize(example):
     return tokenizer(example["text"], padding="max_length", truncation=True)
 
 tokenized_data = dataset.map(tokenize, batched=True)
-\`\`\`
+---
 
-🏋️ Step 5: Fine-Tune the Model
+Step 5: Fine-Tune the Model
 
-\`\`\`python
+your code here:
+---
 from transformers import TrainingArguments, Trainer
 
 training_args = TrainingArguments(
@@ -163,11 +173,12 @@ trainer = Trainer(
 )
 
 trainer.train()
-\`\`\`
+---
 
-📈 Step 6: Evaluate Your Model
+Step 6: Evaluate Your Model
 
-\`\`\`python
+your code here:
+---
 from sklearn.metrics import classification_report
 import numpy as np
 
@@ -176,25 +187,27 @@ pred_labels = np.argmax(preds.predictions, axis=1)
 true_labels = preds.label_ids
 
 print(classification_report(true_labels, pred_labels))
-\`\`\`
+---
 
-🧠 Bonus: Save & Use Your Model
+Save & Use Your Model
 
-\`\`\`python
+your code here:
+---
 model.save_pretrained("my-custom-llm")
 tokenizer.save_pretrained("my-custom-llm")
-\`\`\`
+---
 
 Then, load it back anytime:
 
-\`\`\`python
+your code here:
+---
 from transformers import pipeline
 
 nlp = pipeline("text-classification", model="my-custom-llm", tokenizer="my-custom-llm")
 nlp("I can't update my BIOS")
-\`\`\`
+---
 
-✅ You're Done!
+You're Done!
 
 You've just fine-tuned a powerful LLM to **understand your domain**. From here, you can:
 

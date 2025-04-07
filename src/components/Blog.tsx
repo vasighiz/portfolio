@@ -16,15 +16,15 @@ interface BlogPost {
 
 const blogPosts: BlogPost[] = [
   {
-    id: 1,
-    title: "The Future of AI in Healthcare: A New Era of Precision and Support",
-    excerpt: "Exploring how artificial intelligence is transforming the healthcare industry.",
-    content: "Artificial intelligence is rapidly transforming healthcare, moving far beyond just automating tasks...",
-    date: "2024-03-25",
+    id: 3,
+    title: "Fine-tuning your first LLM using Hugging Face Transformers",
+    excerpt: "A step-by-step tutorial on fine-tuning LLMs with Hugging Face Transformers.",
+    content: "Fine-tuning a large language model might sound intimidating—but with the right tools, it's surprisingly accessible...",
+    date: "2024-03-20",
     author: "Akram Vasighi",
-    tags: ["AI", "Healthcare", "Machine Learning", "Future Tech"],
-    image: "/portfolio/blog/ai-healthcare.jpg",
-    slug: "future-of-ai-in-healthcare"
+    tags: ["AI", "Machine Learning", "LLM", "Hugging Face", "Tutorial"],
+    image: "/portfolio/blog/huggingface-transformers.jpg",
+    slug: "fine-tuning-llm-huggingface-transformers"
   },
   {
     id: 2,
@@ -38,15 +38,15 @@ const blogPosts: BlogPost[] = [
     slug: "fine-tuning-large-language-models"
   },
   {
-    id: 3,
-    title: "Fine-tuning your first LLM using Hugging Face Transformers",
-    excerpt: "A step-by-step tutorial on fine-tuning LLMs with Hugging Face Transformers.",
-    content: "Fine-tuning a large language model might sound intimidating—but with the right tools, it's surprisingly accessible...",
-    date: "2024-03-20",
+    id: 1,
+    title: "The Future of AI in Healthcare: A New Era of Precision and Support",
+    excerpt: "Exploring how artificial intelligence is transforming the healthcare industry.",
+    content: "Artificial intelligence is rapidly transforming healthcare, moving far beyond just automating tasks...",
+    date: "2024-03-25",
     author: "Akram Vasighi",
-    tags: ["AI", "Machine Learning", "LLM", "Hugging Face", "Tutorial"],
-    image: "/portfolio/blog/huggingface-transformers.jpg",
-    slug: "fine-tuning-llm-huggingface-transformers"
+    tags: ["AI", "Healthcare", "Machine Learning", "Future Tech"],
+    image: "/portfolio/blog/ai-healthcare.jpg",
+    slug: "future-of-ai-in-healthcare"
   }
 ];
 
