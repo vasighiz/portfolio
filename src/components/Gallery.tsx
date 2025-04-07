@@ -59,7 +59,7 @@ const galleryItems: GalleryItem[] = [
   },
   {
     id: 6,
-    title: "Project 6",
+    title: "CAGIS Workshop",
     description: "Teaching Python to kids!",
     detailedDescription: "Hands-on experinece with Python to teach kids.",
     technologies: ["Python", "Teaching"],

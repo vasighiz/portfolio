@@ -6,7 +6,7 @@ const Resume = () => {
       title: "Senior ML Engineer, App Developer, & Technical Lead",
       company: "Freelance.",
       period: "2022 - Present",
-      description: "Led the design and development of an LLM-based tool for automated genomic data analysis to enable inference and hypothesis generation for users without programming expertise.",
+      description: "Led the design and development of an LLM-based tool for automated genomic data analysis to enable inference, uncover insights, and generate hypotheses for users without programming expertise.",
       technologies: ["Python ", "GPT", "Streamlit", "AWS", "AI Agents & Automation", "MCP"]
     },
     {
