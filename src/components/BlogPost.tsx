@@ -22,7 +22,7 @@ const blogPosts: BlogPost[] = [
 Fine-Tuning Large Language Models: Custom Intelligence for Real-World Impact
 As artificial intelligence moves from research labs into real-world products, Large Language Models (LLMs) like GPT, BERT, and their derivatives are becoming central to innovation across industries. But while these models are powerful out of the box, their real strength lies in fine-tuning—adapting them to specific tasks, domains, and use cases.
 
-At companies like AMD, where cutting-edge hardware and intelligent software collide, fine-tuning LLMs opens the door to smarter tools, faster development, and deeper product insights.
+At hardware companies, where cutting-edge hardware and intelligent software collide, fine-tuning LLMs opens the door to smarter tools, faster development, and deeper product insights.
 
 What is Fine-Tuning in LLMs?
 Fine-tuning is the process of taking a pre-trained model and training it further on a specific dataset. Think of it as customizing a general-purpose model to become a domain expert—whether that domain is semiconductor manufacturing, technical documentation, or customer support.
@@ -38,8 +38,8 @@ Why It Matters
 
 🔒 Data Privacy: By using internal datasets, you can keep sensitive information in-house and still benefit from cutting-edge AI.
 
-Fine-Tuning in Practice at AMD
-At AMD, fine-tuning is a core part of the AI engineering pipeline. From optimizing infrastructure performance to enabling intelligent automation across the product lifecycle, fine-tuned LLMs:
+Fine-Tuning in Practice
+Fine-tuning is a core part of the AI engineering pipeline. From optimizing infrastructure performance to enabling intelligent automation across the product lifecycle, fine-tuned LLMs:
 
 Interpret millions of logs and system records
 
@@ -49,7 +49,7 @@ Assist engineers with debugging, predictions, and code completion
 
 Adapt to specific team needs—whether it’s research, software, or hardware
 
-By integrating LLMs with AMD’s distributed systems and massive datasets, teams gain AI co-pilots tailored to their exact environment.
+By integrating LLMs distributed systems and massive datasets, teams gain AI co-pilots tailored to their exact environment.
 
 How to Get Started
 If you're aiming to join the frontier of AI engineering:
@@ -62,10 +62,10 @@ If you're aiming to join the frontier of AI engineering:
 
 🚀 Optimize performance with techniques like LoRA, quantization, or distillation
 
-☁️ Deploy on scalable platforms (GCP, AWS, Azure—or even custom AMD-powered clusters)
+☁️ Deploy on scalable platforms (GCP, AWS, Azure—or even custom powered clusters)
 
 Final Thoughts
-Fine-tuning LLMs isn’t just a technical upgrade—it’s a strategic advantage. For companies like AMD building intelligent, high-performance systems, it enables AI to speak the language of engineering, act as a true assistant, and fuel a new generation of smart solutions.
+Fine-tuning LLMs isn’t just a technical upgrade—it’s a strategic advantage. Building intelligent and high-performance systems enables AI to speak the language of engineering, act as a true assistant, and fuel a new generation of smart solutions.
 
 And for developers and researchers? It’s your invitation to build something that not only understands the world—but understands your world.
     `,
