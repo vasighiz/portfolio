@@ -138,16 +138,7 @@ You've just fine-tuned a powerful LLM to **understand your domain**. From here, 
 
 - Fine-tune for other tasks: QA, summarization, translation, etc.
 - Use \`Trainer\` callbacks for logging to WandB or TensorBoard
-- Experiment with newer architectures like RoBERTa or Falcon
-
-🧩 Want More?
-
-I can help you extend this into:
-
-- A version for **text generation** (e.g., GPT-2 or LLaMA)  
-- A **Streamlit app** to demo your fine-tuned model  
-- A **Dockerized pipeline** for deployment  
-- Or even a full **LLM fine-tuning workshop series**`,
+- Experiment with newer architectures like RoBERTa or Falcon`,
     date: "March 20, 2024",
     author: "Akram Vasighi",
     tags: ["LLM", "Hugging Face", "Machine Learning", "Python"],
