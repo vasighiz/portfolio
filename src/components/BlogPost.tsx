@@ -18,8 +18,7 @@ const blogPosts: BlogPost[] = [
   {
     id: 1,
     title: "Fine-Tuning Large Language Models",
-    content: `
-Fine-Tuning Large Language Models: Custom Intelligence for Real-World Impact
+    content: `Fine-Tuning Large Language Models: Custom Intelligence for Real-World Impact
 As artificial intelligence moves from research labs into real-world products, Large Language Models (LLMs) like GPT, BERT, and their derivatives are becoming central to innovation across industries. But while these models are powerful out of the box, their real strength lies in fine-tuning—adapting them to specific tasks, domains, and use cases.
 
 At hardware companies, where cutting-edge hardware and intelligent software collide, fine-tuning LLMs opens the door to smarter tools, faster development, and deeper product insights.
@@ -57,33 +56,26 @@ Adapt to specific team needs—whether it's research, software, or hardware`,
   {
     id: 2,
     title: "Fine-tuning your first LLM using Hugging Face Transformers",
-    content: `
-## 🚀 Tutorial: Fine-Tune Your First Large Language Model (LLM) with Hugging Face Transformers
+    content: `Tutorial: Fine-Tune Your First Large Language Model (LLM) with Hugging Face Transformers
 
 Fine-tuning a large language model might sound intimidating—but with the right tools, it's surprisingly accessible. In this tutorial, you'll learn how to fine-tune a **pretrained LLM** like BERT or DistilBERT on a **custom dataset**, using Python and Hugging Face Transformers.
 
 By the end, you'll have a model tailored to your specific domain—ready to improve everything from document understanding to chatbot performance.
 
----
-
-### 🔧 What You Need
+🔧 What You Need
 
 ✅ Python (>=3.8)  
 ✅ A GPU (recommended for speed)  
 ✅ Libraries: \`transformers\`, \`datasets\`, \`evaluate\`, \`scikit-learn\`  
 ✅ Your dataset (we'll use a simple text classification example)
 
----
-
-### 🧪 Step 1: Install Dependencies
+🧪 Step 1: Install Dependencies
 
 \`\`\`bash
 pip install transformers datasets evaluate scikit-learn
 \`\`\`
 
----
-
-### 📁 Step 2: Prepare Your Dataset
+📁 Step 2: Prepare Your Dataset
 
 Let's say you have customer support data like this:
 
@@ -104,9 +96,7 @@ from datasets import load_dataset
 dataset = load_dataset("csv", data_files={"train": "your_data.csv"})
 \`\`\`
 
----
-
-### 🤖 Step 3: Load a Pretrained Model & Tokenizer
+🤖 Step 3: Load a Pretrained Model & Tokenizer
 
 We'll use **DistilBERT** for classification:
 
@@ -119,9 +109,7 @@ tokenizer = AutoTokenizer.from_pretrained(model_name)
 model = AutoModelForSequenceClassification.from_pretrained(model_name, num_labels=2)
 \`\`\`
 
----
-
-### ✂️ Step 4: Tokenize the Dataset
+✂️ Step 4: Tokenize the Dataset
 
 \`\`\`python
 def tokenize(example):
@@ -130,9 +118,7 @@ def tokenize(example):
 tokenized_data = dataset.map(tokenize, batched=True)
 \`\`\`
 
----
-
-### 🏋️ Step 5: Fine-Tune the Model
+🏋️ Step 5: Fine-Tune the Model
 
 \`\`\`python
 from transformers import TrainingArguments, Trainer
@@ -156,9 +142,7 @@ trainer = Trainer(
 trainer.train()
 \`\`\`
 
----
-
-### 📈 Step 6: Evaluate Your Model
+📈 Step 6: Evaluate Your Model
 
 \`\`\`python
 from sklearn.metrics import classification_report
@@ -171,9 +155,7 @@ true_labels = preds.label_ids
 print(classification_report(true_labels, pred_labels))
 \`\`\`
 
----
-
-### 🧠 Bonus: Save & Use Your Model
+🧠 Bonus: Save & Use Your Model
 
 \`\`\`python
 model.save_pretrained("my-custom-llm")
@@ -189,9 +171,7 @@ nlp = pipeline("text-classification", model="my-custom-llm", tokenizer="my-custo
 nlp("I can't update my BIOS")
 \`\`\`
 
----
-
-### ✅ You're Done!
+✅ You're Done!
 
 You've just fine-tuned a powerful LLM to **understand your domain**. From here, you can:
 
