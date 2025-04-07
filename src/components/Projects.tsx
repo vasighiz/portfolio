@@ -6,8 +6,7 @@ const Projects = () => {
     {
       title: 'scAgentic: AI Agents for Automated Genomic Data Analysis',
       description: 'Innovative project focusing on automating genomic data analysis, powered by LLMs and AI Agents.',
-      technologies: ["Python ", "GPT", "Streamlit", "AWS", "AI Agents & Automation", "MCP"],
-      
+      technologies: ["Python ", "GPT", "Streamlit", "AWS", "AI Agents & Automation", "MCP"],      
       githubUrl: 'https://github.com/vasighiz/scAgentic',
       liveUrl: 'https://healthcare-dl-demo.com'
     },
@@ -22,8 +21,7 @@ const Projects = () => {
     {
       title: 'TDMnewspapers-NMF',
       description: 'Using OCR Text Mining and NMF Topic Modeling to Analyze Historical Newspaper.',
-      technologies: ['Python', 'NLP', 'Optimization', 'HPC'],
-      
+      technologies: ['Python', 'NLP', 'Optimization', 'HPC'],      
       githubUrl: 'https://github.com/vasighiz/TDMnewspapers-NMF',
       liveUrl: 'https://nn-optimization-demo.com'
     }
