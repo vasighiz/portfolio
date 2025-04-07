@@ -47,59 +47,162 @@ Automate technical documentation generation
 
 Assist engineers with debugging, predictions, and code completion
 
-Adapt to specific team needs—whether it’s research, software, or hardware
-
-By integrating LLMs distributed systems and massive datasets, teams gain AI co-pilots tailored to their exact environment.
-
-How to Get Started
-If you're aiming to join the frontier of AI engineering:
-
-💻 Learn model architectures like GPT, BERT, T5
-
-📊 Explore frameworks like HuggingFace Transformers or OpenLLM
-
-🔁 Practice fine-tuning on domain-specific datasets
-
-🚀 Optimize performance with techniques like LoRA, quantization, or distillation
-
-☁️ Deploy on scalable platforms (GCP, AWS, Azure—or even custom powered clusters)
-
-Final Thoughts
-Fine-tuning LLMs isn’t just a technical upgrade—it’s a strategic advantage. Building intelligent and high-performance systems enables AI to speak the language of engineering, act as a true assistant, and fuel a new generation of smart solutions.
-
-And for developers and researchers? It’s your invitation to build something that not only understands the world—but understands your world.
-    `,
-    date: "March 15, 2024",
-    author: "Akram Vasighi & chatGPT!",
-    tags: ["Deep Learning", "AI", "Machine Learning"],
-    image: "/portfolio/blog/deep-learning.jpg",
-    slug: "understanding-deep-learning-fundamentals"
+Adapt to specific team needs—whether it's research, software, or hardware`,
+    date: "2024-03-15",
+    author: "Akram Vasighi",
+    tags: ["AI", "Machine Learning", "LLM", "Fine-tuning"],
+    image: "/portfolio/blog/llm-fine-tuning.jpg",
+    slug: "fine-tuning-large-language-models"
   },
   {
     id: 2,
-    title: "The Future of AI in Healthcare",
+    title: "Fine-tuning your first LLM using Hugging Face Transformers",
     content: `
-      The Future of AI in Healthcare: A New Era of Precision and Support
+## 🚀 Tutorial: Fine-Tune Your First Large Language Model (LLM) with Hugging Face Transformers
 
-Artificial intelligence is rapidly transforming healthcare, moving far beyond just automating tasks. As the technology matures, its potential to reshape clinical workflows and deepen our understanding of human biology is becoming undeniable. Two major frontiers stand out: clinical assistants and genomics.
+Fine-tuning a large language model might sound intimidating—but with the right tools, it's surprisingly accessible. In this tutorial, you'll learn how to fine-tune a **pretrained LLM** like BERT or DistilBERT on a **custom dataset**, using Python and Hugging Face Transformers.
 
-Clinical AI Assistants: A Partner in Care
-Imagine a digital assistant that helps doctors not just with scheduling or note-taking, but with real-time decision-making. AI is evolving into exactly that. From triaging patients in emergency rooms to flagging subtle patterns in radiology scans, intelligent systems are becoming essential second eyes for physicians. The future of these assistants lies in their ability to learn from each interaction, personalize suggestions based on patient history, and integrate with wearable data to offer continuous care—not just reactive treatment.
+By the end, you'll have a model tailored to your specific domain—ready to improve everything from document understanding to chatbot performance.
 
-AI in Genomics: Unlocking the Blueprint of Life
-AI is also revolutionizing genomics, where it’s helping scientists decode vast amounts of genetic information faster and more accurately than ever before. With the help of machine learning, researchers can now identify disease-linked genetic variants, predict gene function, and even tailor treatments to individual genetic profiles. This has huge implications for personalized medicine, cancer therapy, and rare disease diagnosis. As large-scale biobanks and multi-omics data become more accessible, AI will be critical in turning raw data into actionable insights.
+---
 
-What’s Next?
-The future of AI in healthcare isn’t about replacing professionals—it’s about amplifying human expertise, reducing errors, and uncovering patterns too complex for the human eye alone. As ethical frameworks and clinical validation improve, we’re on the brink of a new era where AI-driven tools don’t just assist—they elevate the entire healthcare system.
+### 🔧 What You Need
 
-Healthcare’s next breakthroughs might not come from a lab, but from lines of intelligent code. And the future? It's already being written.
+✅ Python (>=3.8)  
+✅ A GPU (recommended for speed)  
+✅ Libraries: \`transformers\`, \`datasets\`, \`evaluate\`, \`scikit-learn\`  
+✅ Your dataset (we'll use a simple text classification example)
 
-    `,
-    date: "March 10, 2024",
-    author: "Akram Vasighi & chatGPT!",
-    tags: ["AI", "Healthcare", "Technology"],
-    image: "/portfolio/blog/ai-healthcare.jpg",
-    slug: "future-of-ai-in-healthcare"
+---
+
+### 🧪 Step 1: Install Dependencies
+
+\`\`\`bash
+pip install transformers datasets evaluate scikit-learn
+\`\`\`
+
+---
+
+### 📁 Step 2: Prepare Your Dataset
+
+Let's say you have customer support data like this:
+
+\`\`\`csv
+text,label
+"System crash when opening file", bug
+"Need help installing drivers", support
+"Performance issues after update", bug
+"How to request warranty?", support
+\`\`\`
+
+We'll load this using Hugging Face Datasets:
+
+\`\`\`python
+from datasets import load_dataset
+
+# You can load from a CSV, JSON, or even pandas DataFrame
+dataset = load_dataset("csv", data_files={"train": "your_data.csv"})
+\`\`\`
+
+---
+
+### 🤖 Step 3: Load a Pretrained Model & Tokenizer
+
+We'll use **DistilBERT** for classification:
+
+\`\`\`python
+from transformers import AutoTokenizer, AutoModelForSequenceClassification
+
+model_name = "distilbert-base-uncased"
+tokenizer = AutoTokenizer.from_pretrained(model_name)
+
+model = AutoModelForSequenceClassification.from_pretrained(model_name, num_labels=2)
+\`\`\`
+
+---
+
+### ✂️ Step 4: Tokenize the Dataset
+
+\`\`\`python
+def tokenize(example):
+    return tokenizer(example["text"], padding="max_length", truncation=True)
+
+tokenized_data = dataset.map(tokenize, batched=True)
+\`\`\`
+
+---
+
+### 🏋️ Step 5: Fine-Tune the Model
+
+\`\`\`python
+from transformers import TrainingArguments, Trainer
+
+training_args = TrainingArguments(
+    output_dir="./results",
+    evaluation_strategy="epoch",
+    learning_rate=2e-5,
+    per_device_train_batch_size=8,
+    num_train_epochs=3,
+    weight_decay=0.01,
+)
+
+trainer = Trainer(
+    model=model,
+    args=training_args,
+    train_dataset=tokenized_data["train"],
+    eval_dataset=tokenized_data["train"],  # You can split into train/eval
+)
+
+trainer.train()
+\`\`\`
+
+---
+
+### 📈 Step 6: Evaluate Your Model
+
+\`\`\`python
+from sklearn.metrics import classification_report
+import numpy as np
+
+preds = trainer.predict(tokenized_data["train"])
+pred_labels = np.argmax(preds.predictions, axis=1)
+true_labels = preds.label_ids
+
+print(classification_report(true_labels, pred_labels))
+\`\`\`
+
+---
+
+### 🧠 Bonus: Save & Use Your Model
+
+\`\`\`python
+model.save_pretrained("my-custom-llm")
+tokenizer.save_pretrained("my-custom-llm")
+\`\`\`
+
+Then, load it back anytime:
+
+\`\`\`python
+from transformers import pipeline
+
+nlp = pipeline("text-classification", model="my-custom-llm", tokenizer="my-custom-llm")
+nlp("I can't update my BIOS")
+\`\`\`
+
+---
+
+### ✅ You're Done!
+
+You've just fine-tuned a powerful LLM to **understand your domain**. From here, you can:
+
+- Fine-tune for other tasks: QA, summarization, translation, etc.
+- Use \`Trainer\` callbacks for logging to WandB or TensorBoard
+- Experiment with newer architectures like RoBERTa or Falcon`,
+    date: "2024-03-20",
+    author: "Akram Vasighi",
+    tags: ["AI", "Machine Learning", "LLM", "Hugging Face", "Tutorial"],
+    image: "/portfolio/blog/huggingface-transformers.jpg",
+    slug: "fine-tuning-llm-huggingface-transformers"
   }
 ];
 

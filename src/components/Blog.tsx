@@ -17,25 +17,25 @@ interface BlogPost {
 const blogPosts: BlogPost[] = [
   {
     id: 1,
-    title: "Understanding Deep Learning Fundamentals",
-    excerpt: "A comprehensive guide to the basics of deep learning and neural networks.",
-    content: "Deep learning is a subset of machine learning that uses neural networks with multiple layers (deep neural networks) to progressively extract higher-level features from raw input...",
-    date: "March 15, 2024",
+    title: "Fine-Tuning Large Language Models",
+    excerpt: "A comprehensive guide to fine-tuning LLMs for domain-specific applications.",
+    content: "Fine-Tuning Large Language Models: Custom Intelligence for Real-World Impact...",
+    date: "2024-03-15",
     author: "Akram Vasighi",
-    tags: ["Deep Learning", "AI", "Machine Learning"],
-    image: "/portfolio/blog/deep-learning.jpg",
-    slug: "understanding-deep-learning-fundamentals"
+    tags: ["AI", "Machine Learning", "LLM", "Fine-tuning"],
+    image: "/portfolio/blog/llm-fine-tuning.jpg",
+    slug: "fine-tuning-large-language-models"
   },
   {
     id: 2,
-    title: "The Future of AI in Healthcare",
-    excerpt: "Exploring how artificial intelligence is transforming the healthcare industry.",
-    content: "Artificial intelligence is revolutionizing healthcare in ways we never imagined possible. From diagnosis to treatment planning, AI is becoming an integral part of modern medicine...",
-    date: "March 10, 2024",
+    title: "Fine-tuning your first LLM using Hugging Face Transformers",
+    excerpt: "A step-by-step tutorial on fine-tuning LLMs with Hugging Face Transformers.",
+    content: "Fine-tuning a large language model might sound intimidating—but with the right tools, it's surprisingly accessible...",
+    date: "2024-03-20",
     author: "Akram Vasighi",
-    tags: ["AI", "Healthcare", "Technology"],
-    image: "/portfolio/blog/ai-healthcare.jpg",
-    slug: "future-of-ai-in-healthcare"
+    tags: ["AI", "Machine Learning", "LLM", "Hugging Face", "Tutorial"],
+    image: "/portfolio/blog/huggingface-transformers.jpg",
+    slug: "fine-tuning-llm-huggingface-transformers"
   }
 ];
 
