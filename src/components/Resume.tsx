@@ -3,17 +3,17 @@ import { motion } from 'framer-motion'
 const Resume = () => {
   const experiences = [
     {
-      title: "Senior ML Engineer, App Developer, & Technical Lead",
-      company: "Freelance.",
-      period: "2022 - Present",
-      description: "Led the design and development of an innovative LLM-based tool to enhance efficiency in genomic data analysis, and to enable inference, uncover insights, and generate hypotheses for users without programming expertise.",
+      title: "ML Engineer, AI/ML Developer",
+      company: "Infosys.",
+      period: "2023 - Present",
+      description: "Designed and implemented advanced LLM-powered applications focusing on RAG-based retrieval systems and conversational AI assistants specialized in scientific domains. Developed full-stack solutions integrating Hugging Face transformers, vector search (FAISS), and interactive web UIs (Streamlit)",
       technologies: ["Python ", "GPT", "Streamlit", "AWS", "AI Agents & Automation", "MCP"]
     },
     {
       title: "Post-Doctoral Fellow, Data analyst",
       company: "University of Windsor, School of Computer Science & Biomedical Science",
-      period: "07/2024 - 03/2025",
-      description: "Collaborated closely with researchers to translate scientific goals into efficient, scalable computational solutions, accelerating research through data processing and visualization.",
+      period: "07/2024 - Present",
+      description: "Developed scalable analysis pipelines for large-scale datasets ( CRISPR screen and time-series data ) using machine learning and deep learning models. Utilized LLMs to assist in scientific finding interpretation, improving research productivity. Preprocess and clean large data sets to generate reports and visualizations. Executed workflows on GPU clusters ensuring efficient data processing and visualization for collaborators.",
       technologies: ["Python", "R", "HPC and GPU Clusters","Docker & Containerization ", "Cross-functional Team Collaboration"]
     }
   ]

@@ -82,7 +82,7 @@ const Home = () => {
           <FaBriefcase className="text-3xl text-[#1A2B3C] mb-4" />
           <h3 className="text-xl font-semibold text-[#0B1B2D] mb-3">Experience</h3>
           <p className="text-[#334155]">Research Scientist</p>
-          <p className="text-[#334155] text-sm">2014 - Present</p>
+          <p className="text-[#334155] text-sm">2018 - Present</p>
         </motion.div>
 
         <motion.div 
