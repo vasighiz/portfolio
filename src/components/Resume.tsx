@@ -4,7 +4,7 @@ const Resume = () => {
   const experiences = [
     {
       title: "ML Engineer, AI/ML Developer",
-      company: "Infosys.",
+      company: "ACTIC-ai.",
       period: "2023 - Present",
       description: "Designed and implemented advanced LLM-powered applications focusing on RAG-based retrieval systems and conversational AI assistants specialized in scientific domains. Developed full-stack solutions integrating Hugging Face transformers, vector search (FAISS), and interactive web UIs (Streamlit)",
       technologies: ["Python ", "GPT", "Streamlit", "AWS", "AI Agents & Automation", "MCP"]
