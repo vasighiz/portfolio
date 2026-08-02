@@ -16,6 +16,17 @@ interface BlogPost {
 
 const blogPosts: BlogPost[] = [
   {
+    id: 4,
+    title: "AI Engineering in Production: A Structured Study Reference",
+    excerpt: "A chapter-based reference covering the concepts, design decisions, and production considerations of AI engineering.",
+    content: "I created an open-source AI Engineering in Production study reference covering foundation models, evaluation, model selection, prompting, RAG, agents, fine-tuning, dataset engineering, inference optimization, and user feedback.",
+    date: "2026-08-02",
+    author: "Akram Vasighi",
+    tags: ["AI Engineering", "RAG", "AI Agents", "Production AI"],
+    image: "/portfolio/blog/finetune.png",
+    slug: "ai-engineering-in-production-study-reference"
+  },
+  {
     id: 3,
     title: "Fine-tuning your first LLM using Hugging Face Transformers",
     excerpt: "A step-by-step tutorial on fine-tuning LLMs with Hugging Face Transformers.",
