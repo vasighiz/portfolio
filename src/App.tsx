@@ -9,6 +9,7 @@ import Gallery from './components/Gallery';
 import Contact from './components/Contact';
 import Blog from './components/Blog';
 import BlogPost from './components/BlogPost';
+import AIEngineeringBlogPost from './components/AIEngineeringBlogPost';
 import ErrorBoundary from './components/ErrorBoundary';
 
 const App = () => {
@@ -25,6 +26,7 @@ const App = () => {
             <Route path="gallery" element={<Gallery />} />
             <Route path="contact" element={<Contact />} />
             <Route path="blog" element={<Blog />} />
+            <Route path="blog/ai-engineering-in-production-study-reference" element={<AIEngineeringBlogPost />} />
             <Route path="blog/:slug" element={<BlogPost />} />
           </Route>
         </Routes>
