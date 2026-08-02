@@ -72,7 +72,7 @@ const Home = () => {
           <FaGraduationCap className="text-3xl text-[#1A2B3C] mb-4" />
           <h3 className="text-xl font-semibold text-[#0B1B2D] mb-3">Education</h3>
           <p className="text-[#334155]">PhD in Computer Science</p>
-          <p className="text-[#334155] text-sm">2020 - 2024</p>
+          <p className="text-[#334155] text-sm"></p>
         </motion.div>
 
         <motion.div 
