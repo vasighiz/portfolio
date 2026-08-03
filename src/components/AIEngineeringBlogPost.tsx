@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { FaArrowLeft, FaCalendar, FaExternalLinkAlt, FaUser } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+import aiEngineeringImage from '../assets/aiEngineeringImagePart1';
 
 const AIEngineeringBlogPost = () => {
   return (
@@ -21,7 +22,7 @@ const AIEngineeringBlogPost = () => {
 
       <div className="relative h-64 md:h-96 mb-8 rounded-xl overflow-hidden">
         <img
-          src="/portfolio/blog/finetune.png"
+          src={aiEngineeringImage}
           alt="AI Engineering in Production"
           className="w-full h-full object-cover"
         />
