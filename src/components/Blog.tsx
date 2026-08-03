@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { FaCalendar, FaUser, FaArrowRight } from 'react-icons/fa';
+import aiEngineeringImage from '../assets/aiEngineeringImagePart1';
 
 interface BlogPost {
   id: number;
@@ -23,7 +24,7 @@ const blogPosts: BlogPost[] = [
     date: "2026-08-02",
     author: "Akram Vasighi",
     tags: ["AI Engineering", "RAG", "AI Agents", "Production AI"],
-    image: "/portfolio/blog/finetune.png",
+    image: aiEngineeringImage,
     slug: "ai-engineering-in-production-study-reference"
   },
   {
