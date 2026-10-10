@@ -24,7 +24,7 @@ const blogPosts: BlogPost[] = [
     date: "2026-10-10",
     author: "Akram Vasighi",
     tags: ["Human-AI Interaction", "Agentic AI", "AI Agents", "HCI", "Behavior Design"],
-    image: "/portfolio/blog/designing-human-ai-behavior.svg",
+    image: "/portfolio/blog/designing-human-ai-behavior.png",
     slug: "designing-human-ai-behavior"
   },
   {
