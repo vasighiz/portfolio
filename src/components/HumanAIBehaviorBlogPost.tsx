@@ -25,7 +25,7 @@ const HumanAIBehaviorBlogPost = () => {
 
       <div className="relative h-64 md:h-96 mb-8 rounded-xl overflow-hidden bg-white">
         <img
-          src="/portfolio/blog/designing-human-ai-behavior.svg"
+          src="/portfolio/blog/designing-human-ai-behavior.png"
           alt="Designing Human-AI Behavior: traditional workflow compared with an agent-native workflow"
           className="w-full h-full object-cover"
         />
