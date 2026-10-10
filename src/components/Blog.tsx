@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { FaCalendar, FaUser, FaArrowRight } from 'react-icons/fa';
 import aiEngineeringImage from '../assets/aiEngineeringImagePart1';
+import humanAIBehaviorImage from '../../blog/designing-human-ai-behavior.png';
 
 interface BlogPost {
   id: number;
@@ -24,7 +25,7 @@ const blogPosts: BlogPost[] = [
     date: "2026-10-10",
     author: "Akram Vasighi",
     tags: ["Human-AI Interaction", "Agentic AI", "AI Agents", "HCI", "Behavior Design"],
-    image: "/portfolio/blog/designing-human-ai-behavior.png",
+    image: humanAIBehaviorImage,
     slug: "designing-human-ai-behavior"
   },
   {
