@@ -17,6 +17,17 @@ interface BlogPost {
 
 const blogPosts: BlogPost[] = [
   {
+    id: 5,
+    title: "Designing Human–AI Behavior: From Workflow Automation to Agent-Native Interaction",
+    excerpt: "A research-backed exploration of mixed-initiative interaction, human control, trust, and how agentic AI may reshape the workflows we take for granted.",
+    content: "What if the most important question in agentic AI is not what we can automate, but what the human–machine workflow should have been in the first place?",
+    date: "2026-10-10",
+    author: "Akram Vasighi",
+    tags: ["Human-AI Interaction", "Agentic AI", "AI Agents", "HCI", "Behavior Design"],
+    image: "/portfolio/blog/designing-human-ai-behavior.svg",
+    slug: "designing-human-ai-behavior"
+  },
+  {
     id: 4,
     title: "AI Engineering in Production: A Structured Study Reference",
     excerpt: "A chapter-based reference covering the concepts, design decisions, and production considerations of AI engineering.",
@@ -138,4 +149,4 @@ const Blog = () => {
   );
 };
 
-export default Blog; 
+export default Blog;
