@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { FaArrowLeft, FaCalendar, FaExternalLinkAlt, FaUser } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+import humanAIBehaviorImage from '../../blog/designing-human-ai-behavior.png';
 
 const SectionTitle = ({ children }: { children: React.ReactNode }) => (
   <h2 className="text-2xl font-bold text-[#CCD6F6] mt-10 mb-4">{children}</h2>
@@ -25,7 +26,7 @@ const HumanAIBehaviorBlogPost = () => {
 
       <div className="relative h-64 md:h-96 mb-8 rounded-xl overflow-hidden bg-white">
         <img
-          src="/portfolio/blog/designing-human-ai-behavior.png"
+          src={humanAIBehaviorImage}
           alt="Designing Human-AI Behavior: traditional workflow compared with an agent-native workflow"
           className="w-full h-full object-cover"
         />
